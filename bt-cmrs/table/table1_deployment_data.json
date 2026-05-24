@@ -1,0 +1,19 @@
+{
+  "label": "BTCMRS (reacquisition registry) deployment transaction",
+  "network": "localhost",
+  "transactionHash": "0xddf414c733a1c59de57f2304a20132e8f80b532ad5c35c518e5c00cd363b0f60",
+  "blockNumber": 86,
+  "blockHash": "0xfd7eff0364b097391399f119639a95e0cdc5105ff7bc9b2837c338d2a43e36fa",
+  "transactionIndex": 0,
+  "nonce": 38,
+  "typeLabel": "2 (EIP-1559)",
+  "gasLimit": "16777216",
+  "gasUsed": "2522612",
+  "gasUsedPercentOfLimit": "15.03%",
+  "effectiveGasPriceWei": "16340",
+  "gasPriceGwei": 0.00001634,
+  "baseFeeGwei": 0.000012911,
+  "maxFeePerGasGwei": 0.00001634,
+  "maxPriorityFeePerGasGwei": 0.00000391,
+  "transactionFeeEth": "0.00000004121948008"
+}

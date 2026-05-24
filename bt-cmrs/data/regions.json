@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Region Alpha",
+    "minX": 100,
+    "maxX": 250,
+    "minY": 300,
+    "maxY": 450,
+    "regionHashInput": "region-alpha"
+  }
+]

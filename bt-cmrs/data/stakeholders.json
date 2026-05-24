@@ -1,0 +1,32 @@
+[
+  {
+    "key": "mine",
+    "role": "MINE_ROLE",
+    "name": "Kivu Mining Cooperative",
+    "metadataURI": "ipfs://stakeholder-mine"
+  },
+  {
+    "key": "logistics",
+    "role": "LOGISTICS_ROLE",
+    "name": "TraceLogistics Ltd",
+    "metadataURI": "ipfs://stakeholder-logistics"
+  },
+  {
+    "key": "smelter",
+    "role": "SMELTER_ROLE",
+    "name": "Trusted Smelter SA",
+    "metadataURI": "ipfs://stakeholder-smelter"
+  },
+  {
+    "key": "manufacturer",
+    "role": "MANUFACTURER_ROLE",
+    "name": "Green Device Manufacturing",
+    "metadataURI": "ipfs://stakeholder-manufacturer"
+  },
+  {
+    "key": "auditor",
+    "role": "AUDITOR_ROLE",
+    "name": "Independent Audit Group",
+    "metadataURI": "ipfs://stakeholder-auditor"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "batchId": "0xd8db025bbaa430353f1cce06b7f1bcfacdb9e94269bd60213a3138a1d0f78bbf",
+    "regionHash": "0x1cbed29df49982f372b7c7060e6da5e9d388ff108c5b5d6f045ab3334edaa0b3",
+    "geoCommitment": "0x24278c9caa4b085a7fb209c1c862b7ab918491933c922f62ced8e86362e0f833",
+    "x": 150,
+    "y": 350,
+    "r": 1000
+  },
+  {
+    "batchId": "0x08a3e7f9d4824d431f3371609c02a87c3136a5be47597128ea3f33f588beaca4",
+    "regionHash": "0x1cbed29df49982f372b7c7060e6da5e9d388ff108c5b5d6f045ab3334edaa0b3",
+    "geoCommitment": "0x023d1081a9e5b2d78c7631fd7725021d1534ad6fe9be928f66173acedc30f9d4",
+    "x": 151,
+    "y": 351,
+    "r": 1001
+  }
+]

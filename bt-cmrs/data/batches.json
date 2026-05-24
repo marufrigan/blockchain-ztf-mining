@@ -1,0 +1,20 @@
+[
+  {
+    "mineralType": 0,
+    "certificationInput": "cert-doc-001",
+    "x": 150,
+    "y": 350,
+    "r": 1000,
+    "regionHashInput": "region-alpha",
+    "metadataURI": "ipfs://batch-001"
+  },
+  {
+    "mineralType": 3,
+    "certificationInput": "cert-doc-002",
+    "x": 151,
+    "y": 351,
+    "r": 1001,
+    "regionHashInput": "region-alpha",
+    "metadataURI": "ipfs://batch-002"
+  }
+]
