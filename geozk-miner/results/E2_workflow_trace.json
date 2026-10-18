@@ -1,0 +1,893 @@
+{
+  "environment": {
+    "startedAt": "2026-10-18T14:45:57.187Z",
+    "network": "localhost",
+    "chainId": 31337,
+    "hardfork": "osaka",
+    "blockGasLimit": "60000000",
+    "node": "v22.22.0",
+    "os": "Linux 6.18.44-fc-v139",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "cpuCount": 2,
+    "memoryGB": 7.8,
+    "versions": {
+      "hardhat": "2.28.6",
+      "ethers": "6.16.0",
+      "openzeppelin": "5.6.1",
+      "snarkjs": "0.7.6",
+      "circomlib": "2.0.5",
+      "circomlibjs": "0.1.7",
+      "circom": "circom2 npm package 0.2.22\ncircom compiler 2.2.2",
+      "solc": "0.8.23",
+      "optimizerRuns": 200
+    }
+  },
+  "region": {
+    "degrees": {
+      "latMin": -3,
+      "latMax": -2,
+      "lonMin": 28,
+      "lonMax": 29
+    },
+    "encoded": {
+      "minX": "208000000",
+      "maxX": "209000000",
+      "minY": "87000000",
+      "maxY": "88000000"
+    },
+    "regionHash": "0x0ba347b6655ff283152f91f2a7251b4a21bce455e3b3038faf43cf469a939422"
+  },
+  "stakeholderRegistrationGas": [
+    188489,
+    171437,
+    171293,
+    171413,
+    171281
+  ],
+  "trace": [
+    {
+      "step": "Register Mine",
+      "actorRole": "Admin",
+      "transactionHash": "0x9b0a82ca359e945813e8ab00e582c32d1ff74766a90468f6521d824697501cae",
+      "status": "Success",
+      "blockNumber": 4,
+      "blockTimestamp": 1792334758,
+      "blockTimestampISO": "2026-10-18T14:45:58.000Z",
+      "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "nonce": 3,
+      "gasLimit": "207337",
+      "gasUsed": "188489",
+      "effectiveGasPriceWei": "756971409",
+      "feeWei": "142680783911001",
+      "latencyMs": 5.979107,
+      "events": [
+        {
+          "contract": "StakeholderRegistry",
+          "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+          "logIndex": 0,
+          "name": "RoleGranted",
+          "signature": "RoleGranted(bytes32,address,address)",
+          "topics": [
+            "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+            "0x6cb203373780fe72a9090763cdaec72df1a9e24fb36a16246f7e7bb98eb4fe1a",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+          ],
+          "data": "0x",
+          "args": {
+            "role": "0x6cb203373780fe72a9090763cdaec72df1a9e24fb36a16246f7e7bb98eb4fe1a",
+            "account": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+            "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+          }
+        },
+        {
+          "contract": "StakeholderRegistry",
+          "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+          "logIndex": 1,
+          "name": "StakeholderRegistered",
+          "signature": "StakeholderRegistered(address,bytes32,string,uint256)",
+          "topics": [
+            "0x652698784cff4b00fe92da708e349658e5295206224b367320102877218de581",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8",
+            "0x6cb203373780fe72a9090763cdaec72df1a9e24fb36a16246f7e7bb98eb4fe1a"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000006ad4dba600000000000000000000000000000000000000000000000000000000000000144d696e696e6720436f6f70657261746976652041000000000000000000000000",
+          "args": {
+            "account": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+            "role": "0x6cb203373780fe72a9090763cdaec72df1a9e24fb36a16246f7e7bb98eb4fe1a",
+            "name": "Mining Cooperative A",
+            "timestamp": "1792334758"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Register Logistics",
+      "actorRole": "Admin",
+      "transactionHash": "0x8915a4a2e0780bc4fd3a3d2329519a832a112f701c1d3ea5bf8312f576378000",
+      "status": "Success",
+      "blockNumber": 5,
+      "blockTimestamp": 1792334759,
+      "blockTimestampISO": "2026-10-18T14:45:59.000Z",
+      "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "nonce": 4,
+      "gasLimit": "207337",
+      "gasUsed": "171437",
+      "effectiveGasPriceWei": "662944487",
+      "feeWei": "113653214017819",
+      "latencyMs": 5.949683,
+      "events": [
+        {
+          "contract": "StakeholderRegistry",
+          "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+          "logIndex": 0,
+          "name": "RoleGranted",
+          "signature": "RoleGranted(bytes32,address,address)",
+          "topics": [
+            "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+            "0xded9b5e0e0e3a2b3f09a0bc36ec64b9bf7a7c2319f3c4d9cff5ce48714257b21",
+            "0x0000000000000000000000003c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+          ],
+          "data": "0x",
+          "args": {
+            "role": "0xded9b5e0e0e3a2b3f09a0bc36ec64b9bf7a7c2319f3c4d9cff5ce48714257b21",
+            "account": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+            "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+          }
+        },
+        {
+          "contract": "StakeholderRegistry",
+          "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+          "logIndex": 1,
+          "name": "StakeholderRegistered",
+          "signature": "StakeholderRegistered(address,bytes32,string,uint256)",
+          "topics": [
+            "0x652698784cff4b00fe92da708e349658e5295206224b367320102877218de581",
+            "0x0000000000000000000000003c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+            "0xded9b5e0e0e3a2b3f09a0bc36ec64b9bf7a7c2319f3c4d9cff5ce48714257b21"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000006ad4dba700000000000000000000000000000000000000000000000000000000000000144c6f676973746963732050726f76696465722041000000000000000000000000",
+          "args": {
+            "account": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+            "role": "0xded9b5e0e0e3a2b3f09a0bc36ec64b9bf7a7c2319f3c4d9cff5ce48714257b21",
+            "name": "Logistics Provider A",
+            "timestamp": "1792334759"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Register Smelter",
+      "actorRole": "Admin",
+      "transactionHash": "0xf669ad19e86a5b839eeb7f7caec6888456634f5f4744427168db321e16a55caa",
+      "status": "Success",
+      "blockNumber": 6,
+      "blockTimestamp": 1792334760,
+      "blockTimestampISO": "2026-10-18T14:46:00.000Z",
+      "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "nonce": 5,
+      "gasLimit": "207337",
+      "gasUsed": "171293",
+      "effectiveGasPriceWei": "580549982",
+      "feeWei": "99444148066726",
+      "latencyMs": 5.88425,
+      "events": [
+        {
+          "contract": "StakeholderRegistry",
+          "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+          "logIndex": 0,
+          "name": "RoleGranted",
+          "signature": "RoleGranted(bytes32,address,address)",
+          "topics": [
+            "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+            "0x65918acc221482644d34a903edebe48ebca42707f4499a7de7391751c0ae60b2",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+          ],
+          "data": "0x",
+          "args": {
+            "role": "0x65918acc221482644d34a903edebe48ebca42707f4499a7de7391751c0ae60b2",
+            "account": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+            "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+          }
+        },
+        {
+          "contract": "StakeholderRegistry",
+          "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+          "logIndex": 1,
+          "name": "StakeholderRegistered",
+          "signature": "StakeholderRegistered(address,bytes32,string,uint256)",
+          "topics": [
+            "0x652698784cff4b00fe92da708e349658e5295206224b367320102877218de581",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906",
+            "0x65918acc221482644d34a903edebe48ebca42707f4499a7de7391751c0ae60b2"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000006ad4dba80000000000000000000000000000000000000000000000000000000000000009536d656c74657220410000000000000000000000000000000000000000000000",
+          "args": {
+            "account": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+            "role": "0x65918acc221482644d34a903edebe48ebca42707f4499a7de7391751c0ae60b2",
+            "name": "Smelter A",
+            "timestamp": "1792334760"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Register Manufacturer",
+      "actorRole": "Admin",
+      "transactionHash": "0x90d15db2ecc0a7f06d3f24a293403287531959e3f3e46dcdf72f4a01506de108",
+      "status": "Success",
+      "blockNumber": 7,
+      "blockTimestamp": 1792334761,
+      "blockTimestampISO": "2026-10-18T14:46:01.000Z",
+      "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "nonce": 6,
+      "gasLimit": "207337",
+      "gasUsed": "171413",
+      "effectiveGasPriceWei": "508395586",
+      "feeWei": "87145612583018",
+      "latencyMs": 5.48743,
+      "events": [
+        {
+          "contract": "StakeholderRegistry",
+          "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+          "logIndex": 0,
+          "name": "RoleGranted",
+          "signature": "RoleGranted(bytes32,address,address)",
+          "topics": [
+            "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+            "0xeefb95e842a3287179d933b4460be539a1d5af11aa8b325bb45c5c8dc92de4ed",
+            "0x00000000000000000000000015d34aaf54267db7d7c367839aaf71a00a2c6a65",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+          ],
+          "data": "0x",
+          "args": {
+            "role": "0xeefb95e842a3287179d933b4460be539a1d5af11aa8b325bb45c5c8dc92de4ed",
+            "account": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+            "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+          }
+        },
+        {
+          "contract": "StakeholderRegistry",
+          "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+          "logIndex": 1,
+          "name": "StakeholderRegistered",
+          "signature": "StakeholderRegistered(address,bytes32,string,uint256)",
+          "topics": [
+            "0x652698784cff4b00fe92da708e349658e5295206224b367320102877218de581",
+            "0x00000000000000000000000015d34aaf54267db7d7c367839aaf71a00a2c6a65",
+            "0xeefb95e842a3287179d933b4460be539a1d5af11aa8b325bb45c5c8dc92de4ed"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000006ad4dba9000000000000000000000000000000000000000000000000000000000000000e4d616e7566616374757265722041000000000000000000000000000000000000",
+          "args": {
+            "account": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+            "role": "0xeefb95e842a3287179d933b4460be539a1d5af11aa8b325bb45c5c8dc92de4ed",
+            "name": "Manufacturer A",
+            "timestamp": "1792334761"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Register Auditor",
+      "actorRole": "Admin",
+      "transactionHash": "0xcb79c690f18cbebb9bca582989e35b44e56fc0df335755385ca29c90f568fef1",
+      "status": "Success",
+      "blockNumber": 8,
+      "blockTimestamp": 1792334762,
+      "blockTimestampISO": "2026-10-18T14:46:02.000Z",
+      "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "to": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "nonce": 7,
+      "gasLimit": "207337",
+      "gasUsed": "171281",
+      "effectiveGasPriceWei": "445209245",
+      "feeWei": "76255884692845",
+      "latencyMs": 9.670855,
+      "events": [
+        {
+          "contract": "StakeholderRegistry",
+          "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+          "logIndex": 0,
+          "name": "RoleGranted",
+          "signature": "RoleGranted(bytes32,address,address)",
+          "topics": [
+            "0x2f8788117e7eff1d82e926ec794901d17c78024a50270940304540a733656f0d",
+            "0x59a1c48e5837ad7a7f3dcedcbe129bf3249ec4fbf651fd4f5e2600ead39fe2f5",
+            "0x0000000000000000000000009965507d1a55bcc2695c58ba16fb37d819b0a4dc",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+          ],
+          "data": "0x",
+          "args": {
+            "role": "0x59a1c48e5837ad7a7f3dcedcbe129bf3249ec4fbf651fd4f5e2600ead39fe2f5",
+            "account": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+            "sender": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+          }
+        },
+        {
+          "contract": "StakeholderRegistry",
+          "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+          "logIndex": 1,
+          "name": "StakeholderRegistered",
+          "signature": "StakeholderRegistered(address,bytes32,string,uint256)",
+          "topics": [
+            "0x652698784cff4b00fe92da708e349658e5295206224b367320102877218de581",
+            "0x0000000000000000000000009965507d1a55bcc2695c58ba16fb37d819b0a4dc",
+            "0x59a1c48e5837ad7a7f3dcedcbe129bf3249ec4fbf651fd4f5e2600ead39fe2f5"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000006ad4dbaa000000000000000000000000000000000000000000000000000000000000000941756469746f7220410000000000000000000000000000000000000000000000",
+          "args": {
+            "account": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+            "role": "0x59a1c48e5837ad7a7f3dcedcbe129bf3249ec4fbf651fd4f5e2600ead39fe2f5",
+            "name": "Auditor A",
+            "timestamp": "1792334762"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Approve region",
+      "actorRole": "Auditor",
+      "transactionHash": "0x36f2f3985bcc51f47a10f0ed72b7e005d61baa289ad54dc9dd335f1562c2140c",
+      "status": "Success",
+      "blockNumber": 9,
+      "blockTimestamp": 1792334763,
+      "blockTimestampISO": "2026-10-18T14:46:03.000Z",
+      "from": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+      "to": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "nonce": 0,
+      "gasLimit": "63554",
+      "gasUsed": "57777",
+      "effectiveGasPriceWei": "389875823",
+      "feeWei": "22525855425471",
+      "latencyMs": 6.356663,
+      "events": [
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 0,
+          "name": "RegionApproved",
+          "signature": "RegionApproved(bytes32,address,uint256)",
+          "topics": [
+            "0x79c937c0b33336d8678c96dfd9887eab3098a67396ad9f9f7478c486dffcd75a",
+            "0x0ba347b6655ff283152f91f2a7251b4a21bce455e3b3038faf43cf469a939422",
+            "0x0000000000000000000000009965507d1a55bcc2695c58ba16fb37d819b0a4dc"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000006ad4dbab",
+          "args": {
+            "regionHash": "0x0ba347b6655ff283152f91f2a7251b4a21bce455e3b3038faf43cf469a939422",
+            "approver": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+            "timestamp": "1792334763"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Batch creation",
+      "actorRole": "Mine",
+      "transactionHash": "0xc694307ba2b7ee8d414a3ae1cd31014d83ad33c4b11ad80b57a95fbdc3dcf0d1",
+      "status": "Success",
+      "blockNumber": 10,
+      "blockTimestamp": 1792334764,
+      "blockTimestampISO": "2026-10-18T14:46:04.000Z",
+      "from": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+      "to": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "nonce": 0,
+      "gasLimit": "350515",
+      "gasUsed": "313146",
+      "effectiveGasPriceWei": "341235204",
+      "feeWei": "106856439191784",
+      "latencyMs": 5.574028,
+      "events": [
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 0,
+          "name": "BatchCreated",
+          "signature": "BatchCreated(bytes32,address,uint8,bytes32,bytes32,bytes32,uint256)",
+          "topics": [
+            "0x3c67d363dededa7d46a07185434a0edb5bf86b8519aeef0baac3dab2b30f5a7b",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000070e21ccccded7d66304199ea905ee4871f4c05d20842f9a4cefd814b6a000d902d1be92426e17c94deda1623622971743cc3096e0d0274bbe620b54c749298df0ba347b6655ff283152f91f2a7251b4a21bce455e3b3038faf43cf469a939422000000000000000000000000000000000000000000000000000000006ad4dbac",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "createdBy": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+            "mineralType": "0",
+            "certificationHash": "0x70e21ccccded7d66304199ea905ee4871f4c05d20842f9a4cefd814b6a000d90",
+            "geoCommitment": "0x2d1be92426e17c94deda1623622971743cc3096e0d0274bbe620b54c749298df",
+            "approvedRegionHash": "0x0ba347b6655ff283152f91f2a7251b4a21bce455e3b3038faf43cf469a939422",
+            "timestamp": "1792334764"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Region-based ZKP verification",
+      "actorRole": "Auditor",
+      "transactionHash": "0xb5161c5e5db0b769bf0452fcf36b8dc37aefcb427b7c571968e987fb774bbfa5",
+      "status": "Success",
+      "blockNumber": 11,
+      "blockTimestamp": 1792334766,
+      "blockTimestampISO": "2026-10-18T14:46:06.000Z",
+      "from": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+      "to": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "nonce": 1,
+      "gasLimit": "378290",
+      "gasUsed": "338610",
+      "effectiveGasPriceWei": "299026039",
+      "feeWei": "101253207065790",
+      "latencyMs": 16.51828,
+      "events": [
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 0,
+          "name": "ZKPVerified",
+          "signature": "ZKPVerified(bytes32,address,bool,uint256,uint256)",
+          "topics": [
+            "0x2e65d1fe52c2d197af29928c22fce6a0a308f462ccc934919289819f290488f0",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x0000000000000000000000009965507d1a55bcc2695c58ba16fb37d819b0a4dc"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000037931000000000000000000000000000000000000000000000000000000006ad4dbae",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "verifier": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+            "result": true,
+            "verifierGasUsed": "227633",
+            "timestamp": "1792334766"
+          }
+        },
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 1,
+          "name": "BatchStatusUpdated",
+          "signature": "BatchStatusUpdated(bytes32,uint8,uint8,address,uint256)",
+          "topics": [
+            "0x4e8360f96025aa28db3010c5f348d76bc52b587b74a8b47c22132ef1330b2b88",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x0000000000000000000000009965507d1a55bcc2695c58ba16fb37d819b0a4dc"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000006ad4dbae",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "oldStatus": "0",
+            "newStatus": "1",
+            "updatedBy": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+            "timestamp": "1792334766"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Lifecycle: in transit",
+      "actorRole": "Logistics",
+      "transactionHash": "0xf2d9bb1d82f307b5b72a60baac238ed59b4e11a83553131a20337572ddb4d031",
+      "status": "Success",
+      "blockNumber": 12,
+      "blockTimestamp": 1792334767,
+      "blockTimestampISO": "2026-10-18T14:46:07.000Z",
+      "from": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+      "to": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "nonce": 0,
+      "gasLimit": "97532",
+      "gasUsed": "83451",
+      "effectiveGasPriceWei": "262069673",
+      "feeWei": "21869976281523",
+      "latencyMs": 8.630201,
+      "events": [
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 0,
+          "name": "BatchStatusUpdated",
+          "signature": "BatchStatusUpdated(bytes32,uint8,uint8,address,uint256)",
+          "topics": [
+            "0x4e8360f96025aa28db3010c5f348d76bc52b587b74a8b47c22132ef1330b2b88",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x0000000000000000000000003c44cdddb6a900fa2b585dd299e03d12fa4293bc"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000006ad4dbaf",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "oldStatus": "1",
+            "newStatus": "2",
+            "updatedBy": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+            "timestamp": "1792334767"
+          }
+        },
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 1,
+          "name": "CustodyTransferred",
+          "signature": "CustodyTransferred(bytes32,address,address,string,uint256)",
+          "topics": [
+            "0x9170b702aa28d52e4b34671018f8448bbe1249d46a9ccebe44755fdd1fa23b83",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8",
+            "0x0000000000000000000000003c44cdddb6a900fa2b585dd299e03d12fa4293bc"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000006ad4dbaf00000000000000000000000000000000000000000000000000000000000000154d696e652d746f2d736d656c74657220726f7574650000000000000000000000",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "from": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+            "to": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+            "location": "Mine-to-smelter route",
+            "timestamp": "1792334767"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Lifecycle: at smelter",
+      "actorRole": "Smelter",
+      "transactionHash": "0x3ed9f200b379f83b3f880339dacb6b2aa64793d8e9d4cc4ac6cfa29c14ffda73",
+      "status": "Success",
+      "blockNumber": 13,
+      "blockTimestamp": 1792334768,
+      "blockTimestampISO": "2026-10-18T14:46:08.000Z",
+      "from": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+      "to": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "nonce": 0,
+      "gasLimit": "97532",
+      "gasUsed": "83579",
+      "effectiveGasPriceWei": "229402089",
+      "feeWei": "19173197196531",
+      "latencyMs": 10.320555,
+      "events": [
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 0,
+          "name": "BatchStatusUpdated",
+          "signature": "BatchStatusUpdated(bytes32,uint8,uint8,address,uint256)",
+          "topics": [
+            "0x4e8360f96025aa28db3010c5f348d76bc52b587b74a8b47c22132ef1330b2b88",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000003000000000000000000000000000000000000000000000000000000006ad4dbb0",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "oldStatus": "2",
+            "newStatus": "3",
+            "updatedBy": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+            "timestamp": "1792334768"
+          }
+        },
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 1,
+          "name": "CustodyTransferred",
+          "signature": "CustodyTransferred(bytes32,address,address,string,uint256)",
+          "topics": [
+            "0x9170b702aa28d52e4b34671018f8448bbe1249d46a9ccebe44755fdd1fa23b83",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x0000000000000000000000003c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000006ad4dbb00000000000000000000000000000000000000000000000000000000000000016536d656c74657220726563656976696e6720646f636b00000000000000000000",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "from": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+            "to": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+            "location": "Smelter receiving dock",
+            "timestamp": "1792334768"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Lifecycle: processed",
+      "actorRole": "Smelter",
+      "transactionHash": "0xd3204aa7c8c74849aa1cc4465fdef6234d10a52ced026eb6d22ebe80f21380a7",
+      "status": "Success",
+      "blockNumber": 14,
+      "blockTimestamp": 1792334769,
+      "blockTimestampISO": "2026-10-18T14:46:09.000Z",
+      "from": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+      "to": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "nonce": 1,
+      "gasLimit": "97532",
+      "gasUsed": "83663",
+      "effectiveGasPriceWei": "200806717",
+      "feeWei": "16800092364371",
+      "latencyMs": 7.060015,
+      "events": [
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 0,
+          "name": "BatchStatusUpdated",
+          "signature": "BatchStatusUpdated(bytes32,uint8,uint8,address,uint256)",
+          "topics": [
+            "0x4e8360f96025aa28db3010c5f348d76bc52b587b74a8b47c22132ef1330b2b88",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000006ad4dbb1",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "oldStatus": "3",
+            "newStatus": "4",
+            "updatedBy": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+            "timestamp": "1792334769"
+          }
+        },
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 1,
+          "name": "CustodyTransferred",
+          "signature": "CustodyTransferred(bytes32,address,address,string,uint256)",
+          "topics": [
+            "0x9170b702aa28d52e4b34671018f8448bbe1249d46a9ccebe44755fdd1fa23b83",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000006ad4dbb10000000000000000000000000000000000000000000000000000000000000017536d656c7465722070726f63657373696e6720756e6974000000000000000000",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "from": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+            "to": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+            "location": "Smelter processing unit",
+            "timestamp": "1792334769"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Lifecycle: at manufacturer",
+      "actorRole": "Manufacturer",
+      "transactionHash": "0x5372ffe624e587e6fbc113cde0733b24dfd9645521cb6ef1dacdb2c74008f4dd",
+      "status": "Success",
+      "blockNumber": 15,
+      "blockTimestamp": 1792334770,
+      "blockTimestampISO": "2026-10-18T14:46:10.000Z",
+      "from": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+      "to": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "nonce": 0,
+      "gasLimit": "97532",
+      "gasUsed": "83622",
+      "effectiveGasPriceWei": "175775878",
+      "feeWei": "14698730470116",
+      "latencyMs": 6.873228,
+      "events": [
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 0,
+          "name": "BatchStatusUpdated",
+          "signature": "BatchStatusUpdated(bytes32,uint8,uint8,address,uint256)",
+          "topics": [
+            "0x4e8360f96025aa28db3010c5f348d76bc52b587b74a8b47c22132ef1330b2b88",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x00000000000000000000000015d34aaf54267db7d7c367839aaf71a00a2c6a65"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000006ad4dbb2",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "oldStatus": "4",
+            "newStatus": "5",
+            "updatedBy": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+            "timestamp": "1792334770"
+          }
+        },
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 1,
+          "name": "CustodyTransferred",
+          "signature": "CustodyTransferred(bytes32,address,address,string,uint256)",
+          "topics": [
+            "0x9170b702aa28d52e4b34671018f8448bbe1249d46a9ccebe44755fdd1fa23b83",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906",
+            "0x00000000000000000000000015d34aaf54267db7d7c367839aaf71a00a2c6a65"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000006ad4dbb200000000000000000000000000000000000000000000000000000000000000134d616e75666163747572657220696e74616b6500000000000000000000000000",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "from": "0x90F79bf6EB2c4f870365E785982E1f101E93b906",
+            "to": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+            "location": "Manufacturer intake",
+            "timestamp": "1792334770"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Lifecycle: completed",
+      "actorRole": "Manufacturer",
+      "transactionHash": "0x1e948a072f450ce6e1669de6a3db2b22092eecf7356bedee7e861ec5091ab1be",
+      "status": "Success",
+      "blockNumber": 16,
+      "blockTimestamp": 1792334771,
+      "blockTimestampISO": "2026-10-18T14:46:11.000Z",
+      "from": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+      "to": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "nonce": 1,
+      "gasLimit": "97532",
+      "gasUsed": "83730",
+      "effectiveGasPriceWei": "153865139",
+      "feeWei": "12883128088470",
+      "latencyMs": 6.073016,
+      "events": [
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 0,
+          "name": "BatchStatusUpdated",
+          "signature": "BatchStatusUpdated(bytes32,uint8,uint8,address,uint256)",
+          "topics": [
+            "0x4e8360f96025aa28db3010c5f348d76bc52b587b74a8b47c22132ef1330b2b88",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x00000000000000000000000015d34aaf54267db7d7c367839aaf71a00a2c6a65"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000050000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000006ad4dbb3",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "oldStatus": "5",
+            "newStatus": "6",
+            "updatedBy": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+            "timestamp": "1792334771"
+          }
+        },
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 1,
+          "name": "CustodyTransferred",
+          "signature": "CustodyTransferred(bytes32,address,address,string,uint256)",
+          "topics": [
+            "0x9170b702aa28d52e4b34671018f8448bbe1249d46a9ccebe44755fdd1fa23b83",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x00000000000000000000000015d34aaf54267db7d7c367839aaf71a00a2c6a65",
+            "0x00000000000000000000000015d34aaf54267db7d7c367839aaf71a00a2c6a65"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000006ad4dbb300000000000000000000000000000000000000000000000000000000000000164d616e75666163747572696e6720636f6d706c65746500000000000000000000",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "from": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+            "to": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+            "location": "Manufacturing complete",
+            "timestamp": "1792334771"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Reacquisition request",
+      "actorRole": "Manufacturer",
+      "transactionHash": "0x3ce8709030835787a590edcf53e9e32adc707d0d7f09ffe92271bec556c58f7c",
+      "status": "Success",
+      "blockNumber": 17,
+      "blockTimestamp": 1792334772,
+      "blockTimestampISO": "2026-10-18T14:46:12.000Z",
+      "from": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+      "to": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "nonce": 2,
+      "gasLimit": "350137",
+      "gasUsed": "312809",
+      "effectiveGasPriceWei": "134685677",
+      "feeWei": "42130891936693",
+      "latencyMs": 7.804897,
+      "events": [
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 0,
+          "name": "BatchStatusUpdated",
+          "signature": "BatchStatusUpdated(bytes32,uint8,uint8,address,uint256)",
+          "topics": [
+            "0x4e8360f96025aa28db3010c5f348d76bc52b587b74a8b47c22132ef1330b2b88",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x00000000000000000000000015d34aaf54267db7d7c367839aaf71a00a2c6a65"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000006ad4dbb4",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "oldStatus": "6",
+            "newStatus": "7",
+            "updatedBy": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+            "timestamp": "1792334772"
+          }
+        },
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 1,
+          "name": "ReacquisitionRequested",
+          "signature": "ReacquisitionRequested(bytes32,bytes32,address,string,uint256)",
+          "topics": [
+            "0x9004de974d642848923ce418e7e62452ef9d7db59b58d7f116bc53e860df6f60",
+            "0x68837e1648f059658198c94ec66128450d66931e4fe6c3632458a7430ab4ee9c",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x00000000000000000000000015d34aaf54267db7d7c367839aaf71a00a2c6a65"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000006ad4dbb4000000000000000000000000000000000000000000000000000000000000002b496d707572697479206c6576656c2061626f766520636f6e74726163742073706563696669636174696f6e000000000000000000000000000000000000000000",
+          "args": {
+            "requestId": "0x68837e1648f059658198c94ec66128450d66931e4fe6c3632458a7430ab4ee9c",
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "requester": "0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65",
+            "reason": "Impurity level above contract specification",
+            "timestamp": "1792334772"
+          }
+        }
+      ]
+    },
+    {
+      "step": "Reacquisition resolution",
+      "actorRole": "Auditor",
+      "transactionHash": "0x14b319234623fa9ccdf3161dbb179dbb3e87cbaa114594bcd0845157a3d43148",
+      "status": "Success",
+      "blockNumber": 18,
+      "blockTimestamp": 1792334773,
+      "blockTimestampISO": "2026-10-18T14:46:13.000Z",
+      "from": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+      "to": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "nonce": 2,
+      "gasLimit": "134235",
+      "gasUsed": "116568",
+      "effectiveGasPriceWei": "118025513",
+      "feeWei": "13757997999384",
+      "latencyMs": 6.936581,
+      "events": [
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 0,
+          "name": "BatchStatusUpdated",
+          "signature": "BatchStatusUpdated(bytes32,uint8,uint8,address,uint256)",
+          "topics": [
+            "0x4e8360f96025aa28db3010c5f348d76bc52b587b74a8b47c22132ef1330b2b88",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x0000000000000000000000009965507d1a55bcc2695c58ba16fb37d819b0a4dc"
+          ],
+          "data": "0x00000000000000000000000000000000000000000000000000000000000000070000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000006ad4dbb5",
+          "args": {
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "oldStatus": "7",
+            "newStatus": "8",
+            "updatedBy": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+            "timestamp": "1792334773"
+          }
+        },
+        {
+          "contract": "GeoZKMiner",
+          "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+          "logIndex": 1,
+          "name": "ReacquisitionResolved",
+          "signature": "ReacquisitionResolved(bytes32,bytes32,uint8,address,bool,bool,uint256)",
+          "topics": [
+            "0x24907890eb15cdcb5ade8b27dc37c5c93fc284ad19ee31d23b986ee446df02b2",
+            "0x68837e1648f059658198c94ec66128450d66931e4fe6c3632458a7430ab4ee9c",
+            "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "0x0000000000000000000000009965507d1a55bcc2695c58ba16fb37d819b0a4dc"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006ad4dbb5",
+          "args": {
+            "requestId": "0x68837e1648f059658198c94ec66128450d66931e4fe6c3632458a7430ab4ee9c",
+            "batchId": "0x1b260ab6dc1b2738a61ab0a2938819a68294c3dcad59e8ef989a758805b7787c",
+            "decision": "1",
+            "resolver": "0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc",
+            "originValid": true,
+            "complianceValid": false,
+            "timestamp": "1792334773"
+          }
+        }
+      ]
+    }
+  ]
+}

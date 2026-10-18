@@ -1,0 +1,38 @@
+{
+  "name": "geozk-miner",
+  "version": "1.0.0",
+  "description": "GeoZK-Miner: region-private zero-knowledge provenance and reacquisition governance for conflict minerals",
+  "license": "MIT",
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "coverage": "hardhat coverage",
+    "circuits:compile": "bash circuits/compile-circuits.sh",
+    "eval": "hardhat run scripts/runEvaluation.js --network localhost",
+    "figures": "python3 figures/make_charts.py results figures/out",
+    "figures:logs": "python3 figures/make_logs.py results artifacts/contracts/GeoZKMiner.sol/GeoZKMiner.json,artifacts/contracts/StakeholderRegistry.sol/StakeholderRegistry.json figures/logs"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "^9.1.0",
+    "@types/chai": "^4.3.20",
+    "@types/node": "^20.17.30",
+    "circom2": "^0.2.22",
+    "circomlib": "^2.0.5",
+    "dotenv": "^16.4.7",
+    "hardhat": "^2.22.18",
+    "solidity-coverage": "^0.8.14",
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.2.0",
+    "circomlibjs": "^0.1.7",
+    "snarkjs": "^0.7.5"
+  }
+}

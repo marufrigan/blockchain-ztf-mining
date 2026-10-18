@@ -1,0 +1,297 @@
+{
+  "environment": {
+    "startedAt": "2026-10-18T14:45:57.187Z",
+    "network": "localhost",
+    "chainId": 31337,
+    "hardfork": "osaka",
+    "blockGasLimit": "60000000",
+    "node": "v22.22.0",
+    "os": "Linux 6.18.44-fc-v139",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "cpuCount": 2,
+    "memoryGB": 7.8,
+    "versions": {
+      "hardhat": "2.28.6",
+      "ethers": "6.16.0",
+      "openzeppelin": "5.6.1",
+      "snarkjs": "0.7.6",
+      "circomlib": "2.0.5",
+      "circomlibjs": "0.1.7",
+      "circom": "circom2 npm package 0.2.22\ncircom compiler 2.2.2",
+      "solc": "0.8.23",
+      "optimizerRuns": 200
+    }
+  },
+  "txPerClientCreate": 5,
+  "txPerClientZkp": 2,
+  "loadCreate": [
+    {
+      "workload": "Batch creation",
+      "clients": 1,
+      "transactions": 5,
+      "wallMs": 30.437987,
+      "throughputTps": 164.26841893322316,
+      "blocksUsed": 5,
+      "latencyMs": {
+        "n": 5,
+        "mean": 5.1422788,
+        "sd": 0.7991053359900058,
+        "min": 4.145391,
+        "max": 6.09773,
+        "median": 4.959697,
+        "p90": 5.9774572,
+        "p95": 6.0375936,
+        "p99": 6.0857027200000005
+      }
+    },
+    {
+      "workload": "Batch creation",
+      "clients": 2,
+      "transactions": 10,
+      "wallMs": 51.819257,
+      "throughputTps": 192.97845200675107,
+      "blocksUsed": 10,
+      "latencyMs": {
+        "n": 10,
+        "mean": 9.531730199999998,
+        "sd": 2.5866685714239033,
+        "min": 6.6438,
+        "max": 15.215772,
+        "median": 8.824485500000002,
+        "p90": 12.539785799999999,
+        "p95": 13.877778899999997,
+        "p99": 14.94817338
+      }
+    },
+    {
+      "workload": "Batch creation",
+      "clients": 4,
+      "transactions": 20,
+      "wallMs": 102.400933,
+      "throughputTps": 195.31072045993957,
+      "blocksUsed": 20,
+      "latencyMs": {
+        "n": 20,
+        "mean": 19.094115849999998,
+        "sd": 2.5233698403928915,
+        "min": 13.696022,
+        "max": 22.451689,
+        "median": 19.6110085,
+        "p90": 21.8414434,
+        "p95": 22.14502045,
+        "p99": 22.39035529
+      }
+    },
+    {
+      "workload": "Batch creation",
+      "clients": 8,
+      "transactions": 40,
+      "wallMs": 228.422304,
+      "throughputTps": 175.11424803770475,
+      "blocksUsed": 40,
+      "latencyMs": {
+        "n": 40,
+        "mean": 43.421979275,
+        "sd": 19.161770383762622,
+        "min": 26.810555,
+        "max": 86.142401,
+        "median": 36.7364435,
+        "p90": 80.8966708,
+        "p95": 85.0092425,
+        "p99": 85.90167662
+      }
+    },
+    {
+      "workload": "Batch creation",
+      "clients": 16,
+      "transactions": 80,
+      "wallMs": 370.672389,
+      "throughputTps": 215.82400624935676,
+      "blocksUsed": 80,
+      "latencyMs": {
+        "n": 80,
+        "mean": 70.84843068750003,
+        "sd": 8.429451494305834,
+        "min": 51.585275,
+        "max": 89.085494,
+        "median": 71.19466800000001,
+        "p90": 82.2170469,
+        "p95": 84.4999256,
+        "p99": 88.31431733
+      }
+    },
+    {
+      "workload": "Batch creation",
+      "clients": 32,
+      "transactions": 160,
+      "wallMs": 599.796917,
+      "throughputTps": 266.75695633827337,
+      "blocksUsed": 160,
+      "latencyMs": {
+        "n": 160,
+        "mean": 112.18853596250003,
+        "sd": 25.965737060849378,
+        "min": 68.448799,
+        "max": 164.117919,
+        "median": 104.4539265,
+        "p90": 153.7515115,
+        "p95": 159.2178483,
+        "p99": 160.19354957
+      }
+    },
+    {
+      "workload": "Batch creation",
+      "clients": 64,
+      "transactions": 320,
+      "wallMs": 1199.859608,
+      "throughputTps": 266.6978685393,
+      "blocksUsed": 320,
+      "latencyMs": {
+        "n": 320,
+        "mean": 227.1266138437501,
+        "sd": 28.025401978513635,
+        "min": 158.3506,
+        "max": 280.405725,
+        "median": 233.171532,
+        "p90": 258.239582,
+        "p95": 269.01582740000003,
+        "p99": 275.51721704
+      }
+    },
+    {
+      "workload": "Batch creation",
+      "clients": 128,
+      "transactions": 640,
+      "wallMs": 2409.632116,
+      "throughputTps": 265.6007096479121,
+      "blocksUsed": 640,
+      "latencyMs": {
+        "n": 640,
+        "mean": 452.52813942031287,
+        "sd": 84.18304918800331,
+        "min": 295.859715,
+        "max": 648.513994,
+        "median": 448.604668,
+        "p90": 597.3921425,
+        "p95": 610.73078585,
+        "p99": 645.06436057
+      }
+    }
+  ],
+  "loadZkp": [
+    {
+      "workload": "ZKP verification",
+      "clients": 1,
+      "transactions": 2,
+      "wallMs": 18.033766,
+      "throughputTps": 110.90306927571312,
+      "blocksUsed": 2,
+      "latencyMs": {
+        "n": 2,
+        "mean": 8.42502,
+        "sd": 0.2680896365919422,
+        "min": 8.235452,
+        "max": 8.614588,
+        "median": 8.42502,
+        "p90": 8.5766744,
+        "p95": 8.5956312,
+        "p99": 8.61079664
+      }
+    },
+    {
+      "workload": "ZKP verification",
+      "clients": 2,
+      "transactions": 4,
+      "wallMs": 30.724495,
+      "throughputTps": 130.1892838271223,
+      "blocksUsed": 4,
+      "latencyMs": {
+        "n": 4,
+        "mean": 13.051651749999998,
+        "sd": 3.9973112494554286,
+        "min": 10.671553,
+        "max": 19.026698,
+        "median": 11.254178,
+        "p90": 16.764533,
+        "p95": 17.895615499999998,
+        "p99": 18.800481499999997
+      }
+    },
+    {
+      "workload": "ZKP verification",
+      "clients": 4,
+      "transactions": 8,
+      "wallMs": 59.416288,
+      "throughputTps": 134.64321433207002,
+      "blocksUsed": 8,
+      "latencyMs": {
+        "n": 8,
+        "mean": 28.349123374999998,
+        "sd": 5.681728996527677,
+        "min": 19.002148,
+        "max": 35.959492,
+        "median": 28.536728500000002,
+        "p90": 34.1521186,
+        "p95": 35.055805299999996,
+        "p99": 35.77875466
+      }
+    },
+    {
+      "workload": "ZKP verification",
+      "clients": 8,
+      "transactions": 16,
+      "wallMs": 121.920802,
+      "throughputTps": 131.2327325405881,
+      "blocksUsed": 16,
+      "latencyMs": {
+        "n": 16,
+        "mean": 58.002329125,
+        "sd": 6.714151939235175,
+        "min": 47.69256,
+        "max": 67.239687,
+        "median": 55.3910135,
+        "p90": 65.93567200000001,
+        "p95": 66.57525225,
+        "p99": 67.10680005
+      }
+    },
+    {
+      "workload": "ZKP verification",
+      "clients": 16,
+      "transactions": 32,
+      "wallMs": 225.973571,
+      "throughputTps": 141.6094805175248,
+      "blocksUsed": 32,
+      "latencyMs": {
+        "n": 32,
+        "mean": 109.49756409374999,
+        "sd": 11.20839350004999,
+        "min": 94.304739,
+        "max": 126.752746,
+        "median": 108.035147,
+        "p90": 123.1726388,
+        "p95": 124.27632155,
+        "p99": 126.10044865
+      }
+    },
+    {
+      "workload": "ZKP verification",
+      "clients": 32,
+      "transactions": 64,
+      "wallMs": 457.734597,
+      "throughputTps": 139.81901394270182,
+      "blocksUsed": 64,
+      "latencyMs": {
+        "n": 64,
+        "mean": 212.34949723437498,
+        "sd": 24.505018254630617,
+        "min": 155.134334,
+        "max": 238.987345,
+        "median": 219.8860055,
+        "p90": 234.10909080000002,
+        "p95": 236.53637419999998,
+        "p99": 238.54087597
+      }
+    }
+  ]
+}

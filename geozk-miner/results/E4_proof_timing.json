@@ -1,0 +1,3096 @@
+{
+  "environment": {
+    "startedAt": "2026-10-18T14:45:57.187Z",
+    "network": "localhost",
+    "chainId": 31337,
+    "hardfork": "osaka",
+    "blockGasLimit": "60000000",
+    "node": "v22.22.0",
+    "os": "Linux 6.18.44-fc-v139",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "cpuCount": 2,
+    "memoryGB": 7.8,
+    "versions": {
+      "hardhat": "2.28.6",
+      "ethers": "6.16.0",
+      "openzeppelin": "5.6.1",
+      "snarkjs": "0.7.6",
+      "circomlib": "2.0.5",
+      "circomlibjs": "0.1.7",
+      "circom": "circom2 npm package 0.2.22\ncircom compiler 2.2.2",
+      "solc": "0.8.23",
+      "optimizerRuns": 200
+    }
+  },
+  "nProofs": 500,
+  "proofTiming": {
+    "witnessMs": {
+      "n": 500,
+      "mean": 91.37038296199995,
+      "sd": 15.39627583856562,
+      "min": 45.007465,
+      "max": 150.852092,
+      "median": 87.635386,
+      "p90": 113.2224908,
+      "p95": 117.8265744,
+      "p99": 131.75934064
+    },
+    "proveMs": {
+      "n": 500,
+      "mean": 307.31049761599985,
+      "sd": 45.207700915843205,
+      "min": 206.919173,
+      "max": 482.8088,
+      "median": 305.113553,
+      "p90": 365.971248,
+      "p95": 385.74708059999983,
+      "p99": 426.58932734
+    },
+    "verifyMs": {
+      "n": 500,
+      "mean": 24.536802930000004,
+      "sd": 11.401537247618498,
+      "min": 15.61842,
+      "max": 91.974482,
+      "median": 21.521476,
+      "p90": 30.32165860000001,
+      "p95": 49.092325999999986,
+      "p99": 77.37698293999995
+    },
+    "totalMs": {
+      "n": 500,
+      "mean": 423.21768350800005,
+      "sd": 52.82698578843085,
+      "min": 294.257695,
+      "max": 621.9172480000001,
+      "median": 418.96936100000005,
+      "p90": 489.3502223,
+      "p95": 511.77924064999996,
+      "p99": 561.7775133799998
+    }
+  },
+  "proofJsonBytes": {
+    "n": 500,
+    "mean": 722.974,
+    "sd": 1.6512957200665825,
+    "min": 716,
+    "max": 727,
+    "median": 723,
+    "p90": 725,
+    "p95": 726,
+    "p99": 726
+  },
+  "publicSignalsJsonBytes": {
+    "n": 500,
+    "mean": 205.528,
+    "sd": 0.6049362741575236,
+    "min": 202,
+    "max": 206,
+    "median": 206,
+    "p90": 206,
+    "p95": 206,
+    "p99": 206
+  },
+  "perRun": [
+    {
+      "seed": 1,
+      "witnessMs": 132.704161,
+      "proveMs": 351.159676,
+      "verifyMs": 31.221956
+    },
+    {
+      "seed": 2,
+      "witnessMs": 93.674961,
+      "proveMs": 312.182676,
+      "verifyMs": 49.07748
+    },
+    {
+      "seed": 3,
+      "witnessMs": 85.754555,
+      "proveMs": 316.518301,
+      "verifyMs": 23.596483
+    },
+    {
+      "seed": 4,
+      "witnessMs": 105.235451,
+      "proveMs": 327.62773,
+      "verifyMs": 24.603427
+    },
+    {
+      "seed": 5,
+      "witnessMs": 83.969426,
+      "proveMs": 374.848955,
+      "verifyMs": 27.849785
+    },
+    {
+      "seed": 6,
+      "witnessMs": 129.792037,
+      "proveMs": 276.411176,
+      "verifyMs": 82.28015
+    },
+    {
+      "seed": 7,
+      "witnessMs": 138.225532,
+      "proveMs": 258.672055,
+      "verifyMs": 20.390865
+    },
+    {
+      "seed": 8,
+      "witnessMs": 87.093749,
+      "proveMs": 241.491249,
+      "verifyMs": 29.649164
+    },
+    {
+      "seed": 9,
+      "witnessMs": 74.176052,
+      "proveMs": 265.211069,
+      "verifyMs": 23.800814
+    },
+    {
+      "seed": 10,
+      "witnessMs": 79.613666,
+      "proveMs": 263.331306,
+      "verifyMs": 20.536106
+    },
+    {
+      "seed": 11,
+      "witnessMs": 107.137247,
+      "proveMs": 281.227845,
+      "verifyMs": 21.513158
+    },
+    {
+      "seed": 12,
+      "witnessMs": 88.244517,
+      "proveMs": 305.274239,
+      "verifyMs": 20.491248
+    },
+    {
+      "seed": 13,
+      "witnessMs": 76.106917,
+      "proveMs": 239.960225,
+      "verifyMs": 24.82098
+    },
+    {
+      "seed": 14,
+      "witnessMs": 78.819887,
+      "proveMs": 289.374486,
+      "verifyMs": 20.337227
+    },
+    {
+      "seed": 15,
+      "witnessMs": 98.455413,
+      "proveMs": 260.01233,
+      "verifyMs": 16.282624
+    },
+    {
+      "seed": 16,
+      "witnessMs": 75.494628,
+      "proveMs": 271.484415,
+      "verifyMs": 23.337635
+    },
+    {
+      "seed": 17,
+      "witnessMs": 76.535394,
+      "proveMs": 292.212291,
+      "verifyMs": 20.482471
+    },
+    {
+      "seed": 18,
+      "witnessMs": 92.854756,
+      "proveMs": 256.384379,
+      "verifyMs": 18.313013
+    },
+    {
+      "seed": 19,
+      "witnessMs": 79.694316,
+      "proveMs": 277.080152,
+      "verifyMs": 18.77588
+    },
+    {
+      "seed": 20,
+      "witnessMs": 99.399774,
+      "proveMs": 339.11315,
+      "verifyMs": 23.631841
+    },
+    {
+      "seed": 21,
+      "witnessMs": 70.445278,
+      "proveMs": 289.035205,
+      "verifyMs": 19.415085
+    },
+    {
+      "seed": 22,
+      "witnessMs": 100.707659,
+      "proveMs": 328.471921,
+      "verifyMs": 22.552874
+    },
+    {
+      "seed": 23,
+      "witnessMs": 113.409426,
+      "proveMs": 252.76635,
+      "verifyMs": 20.721888
+    },
+    {
+      "seed": 24,
+      "witnessMs": 99.605531,
+      "proveMs": 279.772759,
+      "verifyMs": 27.642352
+    },
+    {
+      "seed": 25,
+      "witnessMs": 77.343122,
+      "proveMs": 342.866289,
+      "verifyMs": 21.206367
+    },
+    {
+      "seed": 26,
+      "witnessMs": 96.835822,
+      "proveMs": 274.888393,
+      "verifyMs": 82.515431
+    },
+    {
+      "seed": 27,
+      "witnessMs": 81.343622,
+      "proveMs": 304.558977,
+      "verifyMs": 22.392288
+    },
+    {
+      "seed": 28,
+      "witnessMs": 90.876418,
+      "proveMs": 312.300018,
+      "verifyMs": 74.630932
+    },
+    {
+      "seed": 29,
+      "witnessMs": 87.647026,
+      "proveMs": 301.37551,
+      "verifyMs": 18.287525
+    },
+    {
+      "seed": 30,
+      "witnessMs": 116.255176,
+      "proveMs": 313.908892,
+      "verifyMs": 43.633266
+    },
+    {
+      "seed": 31,
+      "witnessMs": 96.782177,
+      "proveMs": 272.165844,
+      "verifyMs": 24.219326
+    },
+    {
+      "seed": 32,
+      "witnessMs": 110.526137,
+      "proveMs": 324.956134,
+      "verifyMs": 19.909481
+    },
+    {
+      "seed": 33,
+      "witnessMs": 107.717142,
+      "proveMs": 267.195578,
+      "verifyMs": 18.092295
+    },
+    {
+      "seed": 34,
+      "witnessMs": 105.396936,
+      "proveMs": 256.343974,
+      "verifyMs": 18.214047
+    },
+    {
+      "seed": 35,
+      "witnessMs": 84.146429,
+      "proveMs": 298.074432,
+      "verifyMs": 25.895382
+    },
+    {
+      "seed": 36,
+      "witnessMs": 84.107815,
+      "proveMs": 237.121026,
+      "verifyMs": 18.90806
+    },
+    {
+      "seed": 37,
+      "witnessMs": 85.58803,
+      "proveMs": 323.119166,
+      "verifyMs": 18.597696
+    },
+    {
+      "seed": 38,
+      "witnessMs": 83.206539,
+      "proveMs": 303.976786,
+      "verifyMs": 20.481626
+    },
+    {
+      "seed": 39,
+      "witnessMs": 87.568292,
+      "proveMs": 251.394492,
+      "verifyMs": 16.715966
+    },
+    {
+      "seed": 40,
+      "witnessMs": 118.418552,
+      "proveMs": 260.030623,
+      "verifyMs": 23.119108
+    },
+    {
+      "seed": 41,
+      "witnessMs": 75.248225,
+      "proveMs": 237.748735,
+      "verifyMs": 20.276793
+    },
+    {
+      "seed": 42,
+      "witnessMs": 76.593414,
+      "proveMs": 314.693774,
+      "verifyMs": 28.613746
+    },
+    {
+      "seed": 43,
+      "witnessMs": 107.159055,
+      "proveMs": 317.669161,
+      "verifyMs": 19.349679
+    },
+    {
+      "seed": 44,
+      "witnessMs": 86.535115,
+      "proveMs": 221.754347,
+      "verifyMs": 19.834429
+    },
+    {
+      "seed": 45,
+      "witnessMs": 74.750322,
+      "proveMs": 285.57,
+      "verifyMs": 19.695647
+    },
+    {
+      "seed": 46,
+      "witnessMs": 88.94777,
+      "proveMs": 347.753544,
+      "verifyMs": 23.812351
+    },
+    {
+      "seed": 47,
+      "witnessMs": 76.889702,
+      "proveMs": 328.161725,
+      "verifyMs": 27.947204
+    },
+    {
+      "seed": 48,
+      "witnessMs": 82.024642,
+      "proveMs": 270.763706,
+      "verifyMs": 33.451651
+    },
+    {
+      "seed": 49,
+      "witnessMs": 82.824699,
+      "proveMs": 292.664755,
+      "verifyMs": 19.107159
+    },
+    {
+      "seed": 50,
+      "witnessMs": 102.126936,
+      "proveMs": 220.649038,
+      "verifyMs": 17.450052
+    },
+    {
+      "seed": 51,
+      "witnessMs": 98.986168,
+      "proveMs": 302.604594,
+      "verifyMs": 30.621472
+    },
+    {
+      "seed": 52,
+      "witnessMs": 110.326867,
+      "proveMs": 270.201426,
+      "verifyMs": 57.534394
+    },
+    {
+      "seed": 53,
+      "witnessMs": 80.218989,
+      "proveMs": 271.0156,
+      "verifyMs": 25.533064
+    },
+    {
+      "seed": 54,
+      "witnessMs": 93.403705,
+      "proveMs": 393.316558,
+      "verifyMs": 18.288499
+    },
+    {
+      "seed": 55,
+      "witnessMs": 105.953978,
+      "proveMs": 279.100933,
+      "verifyMs": 21.578809
+    },
+    {
+      "seed": 56,
+      "witnessMs": 111.908641,
+      "proveMs": 247.550459,
+      "verifyMs": 20.390145
+    },
+    {
+      "seed": 57,
+      "witnessMs": 86.408181,
+      "proveMs": 291.946469,
+      "verifyMs": 22.681846
+    },
+    {
+      "seed": 58,
+      "witnessMs": 116.343687,
+      "proveMs": 323.590779,
+      "verifyMs": 18.266553
+    },
+    {
+      "seed": 59,
+      "witnessMs": 82.678034,
+      "proveMs": 302.034962,
+      "verifyMs": 20.5899
+    },
+    {
+      "seed": 60,
+      "witnessMs": 142.032187,
+      "proveMs": 241.031879,
+      "verifyMs": 19.940233
+    },
+    {
+      "seed": 61,
+      "witnessMs": 83.936028,
+      "proveMs": 285.374431,
+      "verifyMs": 22.851336
+    },
+    {
+      "seed": 62,
+      "witnessMs": 77.696323,
+      "proveMs": 275.215649,
+      "verifyMs": 21.598756
+    },
+    {
+      "seed": 63,
+      "witnessMs": 98.875049,
+      "proveMs": 217.094995,
+      "verifyMs": 18.895953
+    },
+    {
+      "seed": 64,
+      "witnessMs": 81.591922,
+      "proveMs": 290.141911,
+      "verifyMs": 19.657769
+    },
+    {
+      "seed": 65,
+      "witnessMs": 83.716628,
+      "proveMs": 254.903754,
+      "verifyMs": 20.516681
+    },
+    {
+      "seed": 66,
+      "witnessMs": 95.016318,
+      "proveMs": 285.432554,
+      "verifyMs": 17.559764
+    },
+    {
+      "seed": 67,
+      "witnessMs": 108.463141,
+      "proveMs": 290.646397,
+      "verifyMs": 26.33195
+    },
+    {
+      "seed": 68,
+      "witnessMs": 115.05252,
+      "proveMs": 342.513752,
+      "verifyMs": 27.446206
+    },
+    {
+      "seed": 69,
+      "witnessMs": 82.766588,
+      "proveMs": 330.584518,
+      "verifyMs": 28.967358
+    },
+    {
+      "seed": 70,
+      "witnessMs": 75.8769,
+      "proveMs": 276.73399,
+      "verifyMs": 23.506883
+    },
+    {
+      "seed": 71,
+      "witnessMs": 87.752341,
+      "proveMs": 248.857787,
+      "verifyMs": 18.371507
+    },
+    {
+      "seed": 72,
+      "witnessMs": 83.859539,
+      "proveMs": 236.160048,
+      "verifyMs": 24.924825
+    },
+    {
+      "seed": 73,
+      "witnessMs": 94.348476,
+      "proveMs": 294.106406,
+      "verifyMs": 19.675294
+    },
+    {
+      "seed": 74,
+      "witnessMs": 91.659496,
+      "proveMs": 306.046861,
+      "verifyMs": 20.001081
+    },
+    {
+      "seed": 75,
+      "witnessMs": 111.045512,
+      "proveMs": 373.471093,
+      "verifyMs": 27.21223
+    },
+    {
+      "seed": 76,
+      "witnessMs": 94.401815,
+      "proveMs": 355.827594,
+      "verifyMs": 30.106457
+    },
+    {
+      "seed": 77,
+      "witnessMs": 105.785863,
+      "proveMs": 347.423788,
+      "verifyMs": 24.980777
+    },
+    {
+      "seed": 78,
+      "witnessMs": 81.127542,
+      "proveMs": 288.927021,
+      "verifyMs": 18.929129
+    },
+    {
+      "seed": 79,
+      "witnessMs": 86.592949,
+      "proveMs": 352.057962,
+      "verifyMs": 23.929366
+    },
+    {
+      "seed": 80,
+      "witnessMs": 117.012718,
+      "proveMs": 329.84307,
+      "verifyMs": 36.122176
+    },
+    {
+      "seed": 81,
+      "witnessMs": 77.23235,
+      "proveMs": 331.78164,
+      "verifyMs": 26.780942
+    },
+    {
+      "seed": 82,
+      "witnessMs": 92.377851,
+      "proveMs": 401.153107,
+      "verifyMs": 20.387475
+    },
+    {
+      "seed": 83,
+      "witnessMs": 86.258007,
+      "proveMs": 242.772536,
+      "verifyMs": 19.176973
+    },
+    {
+      "seed": 84,
+      "witnessMs": 78.354635,
+      "proveMs": 246.912857,
+      "verifyMs": 70.781195
+    },
+    {
+      "seed": 85,
+      "witnessMs": 91.043638,
+      "proveMs": 326.882324,
+      "verifyMs": 28.724821
+    },
+    {
+      "seed": 86,
+      "witnessMs": 94.706713,
+      "proveMs": 267.013153,
+      "verifyMs": 22.462327
+    },
+    {
+      "seed": 87,
+      "witnessMs": 89.043527,
+      "proveMs": 262.257292,
+      "verifyMs": 21.336886
+    },
+    {
+      "seed": 88,
+      "witnessMs": 106.811667,
+      "proveMs": 301.393464,
+      "verifyMs": 19.27553
+    },
+    {
+      "seed": 89,
+      "witnessMs": 79.74318,
+      "proveMs": 249.812135,
+      "verifyMs": 23.794873
+    },
+    {
+      "seed": 90,
+      "witnessMs": 115.260558,
+      "proveMs": 305.972911,
+      "verifyMs": 18.673731
+    },
+    {
+      "seed": 91,
+      "witnessMs": 80.408915,
+      "proveMs": 258.020468,
+      "verifyMs": 19.111074
+    },
+    {
+      "seed": 92,
+      "witnessMs": 86.649085,
+      "proveMs": 236.891233,
+      "verifyMs": 19.527453
+    },
+    {
+      "seed": 93,
+      "witnessMs": 106.497865,
+      "proveMs": 362.960689,
+      "verifyMs": 18.028099
+    },
+    {
+      "seed": 94,
+      "witnessMs": 83.748896,
+      "proveMs": 263.103299,
+      "verifyMs": 22.332183
+    },
+    {
+      "seed": 95,
+      "witnessMs": 120.88732,
+      "proveMs": 301.541882,
+      "verifyMs": 28.626918
+    },
+    {
+      "seed": 96,
+      "witnessMs": 79.56378,
+      "proveMs": 240.965958,
+      "verifyMs": 18.864687
+    },
+    {
+      "seed": 97,
+      "witnessMs": 79.536484,
+      "proveMs": 256.560864,
+      "verifyMs": 19.031591
+    },
+    {
+      "seed": 98,
+      "witnessMs": 78.962074,
+      "proveMs": 330.733702,
+      "verifyMs": 25.098923
+    },
+    {
+      "seed": 99,
+      "witnessMs": 106.081518,
+      "proveMs": 257.145206,
+      "verifyMs": 18.876105
+    },
+    {
+      "seed": 100,
+      "witnessMs": 83.36231,
+      "proveMs": 350.767081,
+      "verifyMs": 23.266422
+    },
+    {
+      "seed": 101,
+      "witnessMs": 85.054268,
+      "proveMs": 232.876844,
+      "verifyMs": 20.167369
+    },
+    {
+      "seed": 102,
+      "witnessMs": 77.552931,
+      "proveMs": 297.166788,
+      "verifyMs": 30.647303
+    },
+    {
+      "seed": 103,
+      "witnessMs": 99.257618,
+      "proveMs": 260.17508,
+      "verifyMs": 54.640771
+    },
+    {
+      "seed": 104,
+      "witnessMs": 79.199224,
+      "proveMs": 277.375403,
+      "verifyMs": 18.66505
+    },
+    {
+      "seed": 105,
+      "witnessMs": 108.363912,
+      "proveMs": 349.549304,
+      "verifyMs": 32.883679
+    },
+    {
+      "seed": 106,
+      "witnessMs": 118.373626,
+      "proveMs": 329.202673,
+      "verifyMs": 23.505256
+    },
+    {
+      "seed": 107,
+      "witnessMs": 109.823793,
+      "proveMs": 286.558146,
+      "verifyMs": 17.554054
+    },
+    {
+      "seed": 108,
+      "witnessMs": 100.467578,
+      "proveMs": 312.86038,
+      "verifyMs": 24.006394
+    },
+    {
+      "seed": 109,
+      "witnessMs": 80.078817,
+      "proveMs": 299.396684,
+      "verifyMs": 21.529794
+    },
+    {
+      "seed": 110,
+      "witnessMs": 87.264329,
+      "proveMs": 260.886439,
+      "verifyMs": 28.619848
+    },
+    {
+      "seed": 111,
+      "witnessMs": 84.479023,
+      "proveMs": 227.03762,
+      "verifyMs": 16.502261
+    },
+    {
+      "seed": 112,
+      "witnessMs": 93.814505,
+      "proveMs": 249.247746,
+      "verifyMs": 23.952243
+    },
+    {
+      "seed": 113,
+      "witnessMs": 86.687991,
+      "proveMs": 263.579635,
+      "verifyMs": 18.086479
+    },
+    {
+      "seed": 114,
+      "witnessMs": 79.312379,
+      "proveMs": 310.295592,
+      "verifyMs": 22.218471
+    },
+    {
+      "seed": 115,
+      "witnessMs": 85.649781,
+      "proveMs": 256.525023,
+      "verifyMs": 17.653583
+    },
+    {
+      "seed": 116,
+      "witnessMs": 98.289583,
+      "proveMs": 262.498026,
+      "verifyMs": 22.603564
+    },
+    {
+      "seed": 117,
+      "witnessMs": 94.762548,
+      "proveMs": 299.133597,
+      "verifyMs": 17.630868
+    },
+    {
+      "seed": 118,
+      "witnessMs": 73.107305,
+      "proveMs": 273.763448,
+      "verifyMs": 17.092835
+    },
+    {
+      "seed": 119,
+      "witnessMs": 75.076018,
+      "proveMs": 263.805377,
+      "verifyMs": 20.479545
+    },
+    {
+      "seed": 120,
+      "witnessMs": 76.659964,
+      "proveMs": 231.288156,
+      "verifyMs": 19.023985
+    },
+    {
+      "seed": 121,
+      "witnessMs": 84.850503,
+      "proveMs": 263.194062,
+      "verifyMs": 16.614532
+    },
+    {
+      "seed": 122,
+      "witnessMs": 72.685497,
+      "proveMs": 227.577285,
+      "verifyMs": 23.768796
+    },
+    {
+      "seed": 123,
+      "witnessMs": 70.673581,
+      "proveMs": 264.511634,
+      "verifyMs": 26.921019
+    },
+    {
+      "seed": 124,
+      "witnessMs": 81.023347,
+      "proveMs": 273.532593,
+      "verifyMs": 17.667855
+    },
+    {
+      "seed": 125,
+      "witnessMs": 75.950513,
+      "proveMs": 231.847197,
+      "verifyMs": 23.095515
+    },
+    {
+      "seed": 126,
+      "witnessMs": 95.308912,
+      "proveMs": 294.111351,
+      "verifyMs": 49.3744
+    },
+    {
+      "seed": 127,
+      "witnessMs": 88.019641,
+      "proveMs": 245.376937,
+      "verifyMs": 26.414666
+    },
+    {
+      "seed": 128,
+      "witnessMs": 83.348143,
+      "proveMs": 285.364887,
+      "verifyMs": 25.922878
+    },
+    {
+      "seed": 129,
+      "witnessMs": 78.199374,
+      "proveMs": 291.023762,
+      "verifyMs": 19.039167
+    },
+    {
+      "seed": 130,
+      "witnessMs": 75.275976,
+      "proveMs": 300.964183,
+      "verifyMs": 24.688989
+    },
+    {
+      "seed": 131,
+      "witnessMs": 99.426556,
+      "proveMs": 317.722201,
+      "verifyMs": 19.978526
+    },
+    {
+      "seed": 132,
+      "witnessMs": 97.102035,
+      "proveMs": 318.185329,
+      "verifyMs": 17.864088
+    },
+    {
+      "seed": 133,
+      "witnessMs": 71.257579,
+      "proveMs": 206.919173,
+      "verifyMs": 16.080943
+    },
+    {
+      "seed": 134,
+      "witnessMs": 76.182637,
+      "proveMs": 264.908989,
+      "verifyMs": 17.72274
+    },
+    {
+      "seed": 135,
+      "witnessMs": 77.730236,
+      "proveMs": 214.83188,
+      "verifyMs": 16.147295
+    },
+    {
+      "seed": 136,
+      "witnessMs": 72.235635,
+      "proveMs": 267.858152,
+      "verifyMs": 25.046969
+    },
+    {
+      "seed": 137,
+      "witnessMs": 76.806909,
+      "proveMs": 223.686665,
+      "verifyMs": 17.597716
+    },
+    {
+      "seed": 138,
+      "witnessMs": 76.537723,
+      "proveMs": 265.782138,
+      "verifyMs": 17.30888
+    },
+    {
+      "seed": 139,
+      "witnessMs": 81.365668,
+      "proveMs": 273.969802,
+      "verifyMs": 25.055525
+    },
+    {
+      "seed": 140,
+      "witnessMs": 73.415751,
+      "proveMs": 266.082077,
+      "verifyMs": 18.691468
+    },
+    {
+      "seed": 141,
+      "witnessMs": 77.977767,
+      "proveMs": 256.076031,
+      "verifyMs": 18.271995
+    },
+    {
+      "seed": 142,
+      "witnessMs": 77.014962,
+      "proveMs": 254.827037,
+      "verifyMs": 18.385553
+    },
+    {
+      "seed": 143,
+      "witnessMs": 92.584708,
+      "proveMs": 301.310374,
+      "verifyMs": 24.762082
+    },
+    {
+      "seed": 144,
+      "witnessMs": 93.706511,
+      "proveMs": 261.876468,
+      "verifyMs": 19.618257
+    },
+    {
+      "seed": 145,
+      "witnessMs": 85.013419,
+      "proveMs": 269.621472,
+      "verifyMs": 19.162859
+    },
+    {
+      "seed": 146,
+      "witnessMs": 72.845556,
+      "proveMs": 266.515381,
+      "verifyMs": 24.3752
+    },
+    {
+      "seed": 147,
+      "witnessMs": 108.585911,
+      "proveMs": 245.10286,
+      "verifyMs": 18.378346
+    },
+    {
+      "seed": 148,
+      "witnessMs": 99.114405,
+      "proveMs": 241.91769,
+      "verifyMs": 18.223565
+    },
+    {
+      "seed": 149,
+      "witnessMs": 88.52698,
+      "proveMs": 358.102772,
+      "verifyMs": 49.003072
+    },
+    {
+      "seed": 150,
+      "witnessMs": 89.099424,
+      "proveMs": 281.712908,
+      "verifyMs": 17.579192
+    },
+    {
+      "seed": 151,
+      "witnessMs": 87.945369,
+      "proveMs": 301.40287,
+      "verifyMs": 27.871085
+    },
+    {
+      "seed": 152,
+      "witnessMs": 76.503649,
+      "proveMs": 267.58387,
+      "verifyMs": 16.898575
+    },
+    {
+      "seed": 153,
+      "witnessMs": 83.284258,
+      "proveMs": 277.605752,
+      "verifyMs": 21.101449
+    },
+    {
+      "seed": 154,
+      "witnessMs": 78.318724,
+      "proveMs": 301.13178,
+      "verifyMs": 23.233292
+    },
+    {
+      "seed": 155,
+      "witnessMs": 70.257412,
+      "proveMs": 269.17055,
+      "verifyMs": 16.176843
+    },
+    {
+      "seed": 156,
+      "witnessMs": 108.181222,
+      "proveMs": 268.245867,
+      "verifyMs": 18.245198
+    },
+    {
+      "seed": 157,
+      "witnessMs": 90.132364,
+      "proveMs": 269.342826,
+      "verifyMs": 19.925312
+    },
+    {
+      "seed": 158,
+      "witnessMs": 117.925781,
+      "proveMs": 270.232533,
+      "verifyMs": 25.34642
+    },
+    {
+      "seed": 159,
+      "witnessMs": 81.125009,
+      "proveMs": 305.071684,
+      "verifyMs": 19.910299
+    },
+    {
+      "seed": 160,
+      "witnessMs": 89.941934,
+      "proveMs": 276.173016,
+      "verifyMs": 24.73909
+    },
+    {
+      "seed": 161,
+      "witnessMs": 95.859036,
+      "proveMs": 332.260724,
+      "verifyMs": 24.2367
+    },
+    {
+      "seed": 162,
+      "witnessMs": 89.606512,
+      "proveMs": 239.737134,
+      "verifyMs": 17.459407
+    },
+    {
+      "seed": 163,
+      "witnessMs": 88.08755,
+      "proveMs": 317.011313,
+      "verifyMs": 19.318945
+    },
+    {
+      "seed": 164,
+      "witnessMs": 116.076489,
+      "proveMs": 380.918917,
+      "verifyMs": 24.420949
+    },
+    {
+      "seed": 165,
+      "witnessMs": 121.619803,
+      "proveMs": 322.951679,
+      "verifyMs": 26.6872
+    },
+    {
+      "seed": 166,
+      "witnessMs": 115.357455,
+      "proveMs": 305.559233,
+      "verifyMs": 25.61334
+    },
+    {
+      "seed": 167,
+      "witnessMs": 90.472799,
+      "proveMs": 289.03338,
+      "verifyMs": 17.339705
+    },
+    {
+      "seed": 168,
+      "witnessMs": 133.601104,
+      "proveMs": 234.68545,
+      "verifyMs": 20.551141
+    },
+    {
+      "seed": 169,
+      "witnessMs": 80.267496,
+      "proveMs": 282.952544,
+      "verifyMs": 27.308197
+    },
+    {
+      "seed": 170,
+      "witnessMs": 84.967381,
+      "proveMs": 238.316119,
+      "verifyMs": 26.989571
+    },
+    {
+      "seed": 171,
+      "witnessMs": 103.981133,
+      "proveMs": 283.451573,
+      "verifyMs": 24.531598
+    },
+    {
+      "seed": 172,
+      "witnessMs": 101.17847,
+      "proveMs": 272.359934,
+      "verifyMs": 23.533821
+    },
+    {
+      "seed": 173,
+      "witnessMs": 94.030155,
+      "proveMs": 284.920079,
+      "verifyMs": 18.538931
+    },
+    {
+      "seed": 174,
+      "witnessMs": 116.555455,
+      "proveMs": 242.78671,
+      "verifyMs": 16.590023
+    },
+    {
+      "seed": 175,
+      "witnessMs": 101.035563,
+      "proveMs": 237.046679,
+      "verifyMs": 18.434488
+    },
+    {
+      "seed": 176,
+      "witnessMs": 86.235869,
+      "proveMs": 281.137943,
+      "verifyMs": 25.249194
+    },
+    {
+      "seed": 177,
+      "witnessMs": 98.058421,
+      "proveMs": 316.245713,
+      "verifyMs": 18.651077
+    },
+    {
+      "seed": 178,
+      "witnessMs": 83.600228,
+      "proveMs": 233.927947,
+      "verifyMs": 18.422131
+    },
+    {
+      "seed": 179,
+      "witnessMs": 114.495951,
+      "proveMs": 268.44625,
+      "verifyMs": 21.065989
+    },
+    {
+      "seed": 180,
+      "witnessMs": 91.185363,
+      "proveMs": 238.291886,
+      "verifyMs": 19.28493
+    },
+    {
+      "seed": 181,
+      "witnessMs": 90.224242,
+      "proveMs": 349.959466,
+      "verifyMs": 27.052238
+    },
+    {
+      "seed": 182,
+      "witnessMs": 114.887712,
+      "proveMs": 327.298085,
+      "verifyMs": 18.800911
+    },
+    {
+      "seed": 183,
+      "witnessMs": 122.343788,
+      "proveMs": 324.342578,
+      "verifyMs": 28.173953
+    },
+    {
+      "seed": 184,
+      "witnessMs": 96.64599,
+      "proveMs": 232.987347,
+      "verifyMs": 20.969048
+    },
+    {
+      "seed": 185,
+      "witnessMs": 87.200258,
+      "proveMs": 273.853241,
+      "verifyMs": 20.028965
+    },
+    {
+      "seed": 186,
+      "witnessMs": 74.005748,
+      "proveMs": 256.175844,
+      "verifyMs": 19.451517
+    },
+    {
+      "seed": 187,
+      "witnessMs": 98.043796,
+      "proveMs": 326.009412,
+      "verifyMs": 28.180944
+    },
+    {
+      "seed": 188,
+      "witnessMs": 112.060397,
+      "proveMs": 225.893163,
+      "verifyMs": 16.172289
+    },
+    {
+      "seed": 189,
+      "witnessMs": 74.316912,
+      "proveMs": 264.712587,
+      "verifyMs": 17.54757
+    },
+    {
+      "seed": 190,
+      "witnessMs": 93.871862,
+      "proveMs": 264.27323,
+      "verifyMs": 34.506938
+    },
+    {
+      "seed": 191,
+      "witnessMs": 107.777081,
+      "proveMs": 238.559356,
+      "verifyMs": 17.630882
+    },
+    {
+      "seed": 192,
+      "witnessMs": 74.113962,
+      "proveMs": 326.024441,
+      "verifyMs": 22.185868
+    },
+    {
+      "seed": 193,
+      "witnessMs": 90.132136,
+      "proveMs": 254.926445,
+      "verifyMs": 27.912169
+    },
+    {
+      "seed": 194,
+      "witnessMs": 71.929636,
+      "proveMs": 283.551063,
+      "verifyMs": 20.341696
+    },
+    {
+      "seed": 195,
+      "witnessMs": 101.350184,
+      "proveMs": 323.399396,
+      "verifyMs": 26.632148
+    },
+    {
+      "seed": 196,
+      "witnessMs": 82.455378,
+      "proveMs": 289.850736,
+      "verifyMs": 24.965846
+    },
+    {
+      "seed": 197,
+      "witnessMs": 76.90044,
+      "proveMs": 292.363566,
+      "verifyMs": 23.618456
+    },
+    {
+      "seed": 198,
+      "witnessMs": 74.413209,
+      "proveMs": 260.651101,
+      "verifyMs": 24.337811
+    },
+    {
+      "seed": 199,
+      "witnessMs": 83.840655,
+      "proveMs": 224.969669,
+      "verifyMs": 17.461468
+    },
+    {
+      "seed": 200,
+      "witnessMs": 94.649852,
+      "proveMs": 318.716581,
+      "verifyMs": 19.168282
+    },
+    {
+      "seed": 201,
+      "witnessMs": 81.916993,
+      "proveMs": 321.3988,
+      "verifyMs": 17.890307
+    },
+    {
+      "seed": 202,
+      "witnessMs": 122.927595,
+      "proveMs": 339.644551,
+      "verifyMs": 17.788248
+    },
+    {
+      "seed": 203,
+      "witnessMs": 84.559964,
+      "proveMs": 275.015863,
+      "verifyMs": 26.27186
+    },
+    {
+      "seed": 204,
+      "witnessMs": 85.256042,
+      "proveMs": 226.879526,
+      "verifyMs": 20.24994
+    },
+    {
+      "seed": 205,
+      "witnessMs": 107.39617,
+      "proveMs": 267.187622,
+      "verifyMs": 61.180042
+    },
+    {
+      "seed": 206,
+      "witnessMs": 100.583991,
+      "proveMs": 264.079238,
+      "verifyMs": 17.515333
+    },
+    {
+      "seed": 207,
+      "witnessMs": 90.165273,
+      "proveMs": 285.613393,
+      "verifyMs": 22.213814
+    },
+    {
+      "seed": 208,
+      "witnessMs": 91.099849,
+      "proveMs": 290.2128,
+      "verifyMs": 16.13936
+    },
+    {
+      "seed": 209,
+      "witnessMs": 80.426054,
+      "proveMs": 275.777201,
+      "verifyMs": 22.481368
+    },
+    {
+      "seed": 210,
+      "witnessMs": 107.382944,
+      "proveMs": 262.397412,
+      "verifyMs": 91.974482
+    },
+    {
+      "seed": 211,
+      "witnessMs": 87.847345,
+      "proveMs": 313.909363,
+      "verifyMs": 19.730817
+    },
+    {
+      "seed": 212,
+      "witnessMs": 101.083462,
+      "proveMs": 265.357428,
+      "verifyMs": 76.993973
+    },
+    {
+      "seed": 213,
+      "witnessMs": 111.117174,
+      "proveMs": 256.378453,
+      "verifyMs": 18.232642
+    },
+    {
+      "seed": 214,
+      "witnessMs": 125.095528,
+      "proveMs": 351.198716,
+      "verifyMs": 23.031741
+    },
+    {
+      "seed": 215,
+      "witnessMs": 76.033453,
+      "proveMs": 300.074634,
+      "verifyMs": 30.166367
+    },
+    {
+      "seed": 216,
+      "witnessMs": 111.891027,
+      "proveMs": 315.848017,
+      "verifyMs": 23.245536
+    },
+    {
+      "seed": 217,
+      "witnessMs": 92.946096,
+      "proveMs": 337.38413,
+      "verifyMs": 23.968847
+    },
+    {
+      "seed": 218,
+      "witnessMs": 82.896666,
+      "proveMs": 334.464725,
+      "verifyMs": 25.409394
+    },
+    {
+      "seed": 219,
+      "witnessMs": 118.815898,
+      "proveMs": 279.691444,
+      "verifyMs": 23.47638
+    },
+    {
+      "seed": 220,
+      "witnessMs": 117.821353,
+      "proveMs": 301.317725,
+      "verifyMs": 23.665878
+    },
+    {
+      "seed": 221,
+      "witnessMs": 83.5327,
+      "proveMs": 321.967638,
+      "verifyMs": 19.090333
+    },
+    {
+      "seed": 222,
+      "witnessMs": 75.189106,
+      "proveMs": 333.392897,
+      "verifyMs": 61.551252
+    },
+    {
+      "seed": 223,
+      "witnessMs": 85.428254,
+      "proveMs": 314.03366,
+      "verifyMs": 27.074653
+    },
+    {
+      "seed": 224,
+      "witnessMs": 82.745773,
+      "proveMs": 363.558529,
+      "verifyMs": 24.358273
+    },
+    {
+      "seed": 225,
+      "witnessMs": 77.563148,
+      "proveMs": 319.546135,
+      "verifyMs": 22.172275
+    },
+    {
+      "seed": 226,
+      "witnessMs": 73.172504,
+      "proveMs": 353.124403,
+      "verifyMs": 29.893727
+    },
+    {
+      "seed": 227,
+      "witnessMs": 104.865343,
+      "proveMs": 319.228045,
+      "verifyMs": 28.261726
+    },
+    {
+      "seed": 228,
+      "witnessMs": 72.877943,
+      "proveMs": 276.628218,
+      "verifyMs": 32.242027
+    },
+    {
+      "seed": 229,
+      "witnessMs": 115.260562,
+      "proveMs": 299.554446,
+      "verifyMs": 28.689151
+    },
+    {
+      "seed": 230,
+      "witnessMs": 96.94232,
+      "proveMs": 336.469697,
+      "verifyMs": 24.501108
+    },
+    {
+      "seed": 231,
+      "witnessMs": 80.421886,
+      "proveMs": 272.733516,
+      "verifyMs": 24.502058
+    },
+    {
+      "seed": 232,
+      "witnessMs": 69.824741,
+      "proveMs": 356.616018,
+      "verifyMs": 19.340193
+    },
+    {
+      "seed": 233,
+      "witnessMs": 87.018657,
+      "proveMs": 305.18033,
+      "verifyMs": 16.875638
+    },
+    {
+      "seed": 234,
+      "witnessMs": 78.352617,
+      "proveMs": 341.392045,
+      "verifyMs": 26.53446
+    },
+    {
+      "seed": 235,
+      "witnessMs": 93.132651,
+      "proveMs": 355.477465,
+      "verifyMs": 21.932212
+    },
+    {
+      "seed": 236,
+      "witnessMs": 101.940958,
+      "proveMs": 348.538908,
+      "verifyMs": 26.673261
+    },
+    {
+      "seed": 237,
+      "witnessMs": 72.186751,
+      "proveMs": 365.960123,
+      "verifyMs": 23.018731
+    },
+    {
+      "seed": 238,
+      "witnessMs": 113.20277,
+      "proveMs": 322.959743,
+      "verifyMs": 28.276453
+    },
+    {
+      "seed": 239,
+      "witnessMs": 81.05947,
+      "proveMs": 313.569476,
+      "verifyMs": 18.357691
+    },
+    {
+      "seed": 240,
+      "witnessMs": 81.636467,
+      "proveMs": 357.679071,
+      "verifyMs": 22.018197
+    },
+    {
+      "seed": 241,
+      "witnessMs": 81.322342,
+      "proveMs": 352.490166,
+      "verifyMs": 27.075727
+    },
+    {
+      "seed": 242,
+      "witnessMs": 87.948032,
+      "proveMs": 336.824869,
+      "verifyMs": 24.523736
+    },
+    {
+      "seed": 243,
+      "witnessMs": 109.796508,
+      "proveMs": 355.85967,
+      "verifyMs": 31.280673
+    },
+    {
+      "seed": 244,
+      "witnessMs": 110.559515,
+      "proveMs": 309.282363,
+      "verifyMs": 25.022367
+    },
+    {
+      "seed": 245,
+      "witnessMs": 102.382189,
+      "proveMs": 312.558102,
+      "verifyMs": 22.836558
+    },
+    {
+      "seed": 246,
+      "witnessMs": 79.813572,
+      "proveMs": 292.134722,
+      "verifyMs": 18.471785
+    },
+    {
+      "seed": 247,
+      "witnessMs": 89.416664,
+      "proveMs": 332.315947,
+      "verifyMs": 23.318533
+    },
+    {
+      "seed": 248,
+      "witnessMs": 108.397292,
+      "proveMs": 394.214928,
+      "verifyMs": 25.175227
+    },
+    {
+      "seed": 249,
+      "witnessMs": 109.46,
+      "proveMs": 380.94121,
+      "verifyMs": 19.883723
+    },
+    {
+      "seed": 250,
+      "witnessMs": 91.374768,
+      "proveMs": 342.199554,
+      "verifyMs": 23.898511
+    },
+    {
+      "seed": 251,
+      "witnessMs": 116.631681,
+      "proveMs": 300.893602,
+      "verifyMs": 70.172943
+    },
+    {
+      "seed": 252,
+      "witnessMs": 81.792715,
+      "proveMs": 350.751352,
+      "verifyMs": 27.186641
+    },
+    {
+      "seed": 253,
+      "witnessMs": 82.797796,
+      "proveMs": 296.773175,
+      "verifyMs": 22.034779
+    },
+    {
+      "seed": 254,
+      "witnessMs": 110.7714,
+      "proveMs": 428.967047,
+      "verifyMs": 29.714178
+    },
+    {
+      "seed": 255,
+      "witnessMs": 121.232478,
+      "proveMs": 354.222698,
+      "verifyMs": 86.244811
+    },
+    {
+      "seed": 256,
+      "witnessMs": 95.998343,
+      "proveMs": 332.172921,
+      "verifyMs": 17.67556
+    },
+    {
+      "seed": 257,
+      "witnessMs": 111.393167,
+      "proveMs": 423.845681,
+      "verifyMs": 84.831231
+    },
+    {
+      "seed": 258,
+      "witnessMs": 100.524516,
+      "proveMs": 353.881447,
+      "verifyMs": 18.185708
+    },
+    {
+      "seed": 259,
+      "witnessMs": 85.411665,
+      "proveMs": 286.570118,
+      "verifyMs": 22.591564
+    },
+    {
+      "seed": 260,
+      "witnessMs": 73.698018,
+      "proveMs": 261.683821,
+      "verifyMs": 18.110341
+    },
+    {
+      "seed": 261,
+      "witnessMs": 77.323058,
+      "proveMs": 285.778372,
+      "verifyMs": 18.938992
+    },
+    {
+      "seed": 262,
+      "witnessMs": 117.082948,
+      "proveMs": 397.95604,
+      "verifyMs": 25.471221
+    },
+    {
+      "seed": 263,
+      "witnessMs": 106.940047,
+      "proveMs": 366.071373,
+      "verifyMs": 24.068805
+    },
+    {
+      "seed": 264,
+      "witnessMs": 100.808262,
+      "proveMs": 318.480518,
+      "verifyMs": 22.004031
+    },
+    {
+      "seed": 265,
+      "witnessMs": 95.358807,
+      "proveMs": 318.475527,
+      "verifyMs": 17.814773
+    },
+    {
+      "seed": 266,
+      "witnessMs": 79.393528,
+      "proveMs": 342.271918,
+      "verifyMs": 19.778024
+    },
+    {
+      "seed": 267,
+      "witnessMs": 104.220711,
+      "proveMs": 349.031062,
+      "verifyMs": 23.870475
+    },
+    {
+      "seed": 268,
+      "witnessMs": 109.943121,
+      "proveMs": 350.449892,
+      "verifyMs": 46.58567
+    },
+    {
+      "seed": 269,
+      "witnessMs": 111.984637,
+      "proveMs": 389.383763,
+      "verifyMs": 24.476677
+    },
+    {
+      "seed": 270,
+      "witnessMs": 126.691658,
+      "proveMs": 381.199044,
+      "verifyMs": 20.644498
+    },
+    {
+      "seed": 271,
+      "witnessMs": 81.548251,
+      "proveMs": 378.147118,
+      "verifyMs": 18.160452
+    },
+    {
+      "seed": 272,
+      "witnessMs": 80.837119,
+      "proveMs": 346.74978,
+      "verifyMs": 24.246887
+    },
+    {
+      "seed": 273,
+      "witnessMs": 93.767928,
+      "proveMs": 351.489535,
+      "verifyMs": 22.006269
+    },
+    {
+      "seed": 274,
+      "witnessMs": 84.849058,
+      "proveMs": 356.182146,
+      "verifyMs": 31.36492
+    },
+    {
+      "seed": 275,
+      "witnessMs": 105.43498,
+      "proveMs": 302.697783,
+      "verifyMs": 30.626363
+    },
+    {
+      "seed": 276,
+      "witnessMs": 102.730009,
+      "proveMs": 420.528418,
+      "verifyMs": 25.468913
+    },
+    {
+      "seed": 277,
+      "witnessMs": 88.544527,
+      "proveMs": 304.241285,
+      "verifyMs": 24.046619
+    },
+    {
+      "seed": 278,
+      "witnessMs": 72.12572,
+      "proveMs": 286.15415,
+      "verifyMs": 23.693373
+    },
+    {
+      "seed": 279,
+      "witnessMs": 85.773433,
+      "proveMs": 295.695481,
+      "verifyMs": 41.124857
+    },
+    {
+      "seed": 280,
+      "witnessMs": 103.428756,
+      "proveMs": 364.073524,
+      "verifyMs": 20.926279
+    },
+    {
+      "seed": 281,
+      "witnessMs": 128.435435,
+      "proveMs": 328.658783,
+      "verifyMs": 22.150356
+    },
+    {
+      "seed": 282,
+      "witnessMs": 75.063607,
+      "proveMs": 268.426126,
+      "verifyMs": 29.911557
+    },
+    {
+      "seed": 283,
+      "witnessMs": 90.677977,
+      "proveMs": 301.369498,
+      "verifyMs": 17.476885
+    },
+    {
+      "seed": 284,
+      "witnessMs": 99.126729,
+      "proveMs": 379.727943,
+      "verifyMs": 26.374353
+    },
+    {
+      "seed": 285,
+      "witnessMs": 89.094351,
+      "proveMs": 375.973503,
+      "verifyMs": 17.710647
+    },
+    {
+      "seed": 286,
+      "witnessMs": 94.404036,
+      "proveMs": 398.456689,
+      "verifyMs": 29.25714
+    },
+    {
+      "seed": 287,
+      "witnessMs": 76.977853,
+      "proveMs": 261.899965,
+      "verifyMs": 15.61842
+    },
+    {
+      "seed": 288,
+      "witnessMs": 76.893001,
+      "proveMs": 318.712826,
+      "verifyMs": 19.092262
+    },
+    {
+      "seed": 289,
+      "witnessMs": 106.003741,
+      "proveMs": 305.155422,
+      "verifyMs": 19.699316
+    },
+    {
+      "seed": 290,
+      "witnessMs": 84.127274,
+      "proveMs": 366.236512,
+      "verifyMs": 19.199613
+    },
+    {
+      "seed": 291,
+      "witnessMs": 87.708874,
+      "proveMs": 426.579288,
+      "verifyMs": 23.422273
+    },
+    {
+      "seed": 292,
+      "witnessMs": 122.824664,
+      "proveMs": 357.937803,
+      "verifyMs": 24.880078
+    },
+    {
+      "seed": 293,
+      "witnessMs": 75.952063,
+      "proveMs": 397.727491,
+      "verifyMs": 24.14737
+    },
+    {
+      "seed": 294,
+      "witnessMs": 116.355902,
+      "proveMs": 360.62502,
+      "verifyMs": 18.441335
+    },
+    {
+      "seed": 295,
+      "witnessMs": 123.478578,
+      "proveMs": 332.503445,
+      "verifyMs": 19.386271
+    },
+    {
+      "seed": 296,
+      "witnessMs": 115.616197,
+      "proveMs": 316.709383,
+      "verifyMs": 23.052149
+    },
+    {
+      "seed": 297,
+      "witnessMs": 107.082045,
+      "proveMs": 324.269569,
+      "verifyMs": 22.056873
+    },
+    {
+      "seed": 298,
+      "witnessMs": 91.27854,
+      "proveMs": 314.960072,
+      "verifyMs": 18.749819
+    },
+    {
+      "seed": 299,
+      "witnessMs": 81.685297,
+      "proveMs": 295.147381,
+      "verifyMs": 30.288346
+    },
+    {
+      "seed": 300,
+      "witnessMs": 98.15394,
+      "proveMs": 318.429666,
+      "verifyMs": 23.52638
+    },
+    {
+      "seed": 301,
+      "witnessMs": 108.844618,
+      "proveMs": 270.959468,
+      "verifyMs": 15.972501
+    },
+    {
+      "seed": 302,
+      "witnessMs": 66.566251,
+      "proveMs": 303.664298,
+      "verifyMs": 30.287969
+    },
+    {
+      "seed": 303,
+      "witnessMs": 102.284424,
+      "proveMs": 345.389083,
+      "verifyMs": 19.370863
+    },
+    {
+      "seed": 304,
+      "witnessMs": 115.190535,
+      "proveMs": 309.530815,
+      "verifyMs": 17.333114
+    },
+    {
+      "seed": 305,
+      "witnessMs": 77.832626,
+      "proveMs": 384.657465,
+      "verifyMs": 23.532337
+    },
+    {
+      "seed": 306,
+      "witnessMs": 114.682537,
+      "proveMs": 310.612035,
+      "verifyMs": 48.742079
+    },
+    {
+      "seed": 307,
+      "witnessMs": 86.024312,
+      "proveMs": 318.867697,
+      "verifyMs": 16.712672
+    },
+    {
+      "seed": 308,
+      "witnessMs": 77.209329,
+      "proveMs": 291.373692,
+      "verifyMs": 24.217305
+    },
+    {
+      "seed": 309,
+      "witnessMs": 113.399978,
+      "proveMs": 349.145025,
+      "verifyMs": 21.163686
+    },
+    {
+      "seed": 310,
+      "witnessMs": 100.449059,
+      "proveMs": 365.050555,
+      "verifyMs": 16.125805
+    },
+    {
+      "seed": 311,
+      "witnessMs": 75.11645,
+      "proveMs": 407.048598,
+      "verifyMs": 24.145768
+    },
+    {
+      "seed": 312,
+      "witnessMs": 113.687902,
+      "proveMs": 334.089989,
+      "verifyMs": 28.973221
+    },
+    {
+      "seed": 313,
+      "witnessMs": 113.147011,
+      "proveMs": 362.189256,
+      "verifyMs": 22.426929
+    },
+    {
+      "seed": 314,
+      "witnessMs": 150.852092,
+      "proveMs": 345.918642,
+      "verifyMs": 18.306945
+    },
+    {
+      "seed": 315,
+      "witnessMs": 81.687379,
+      "proveMs": 346.039508,
+      "verifyMs": 25.378406
+    },
+    {
+      "seed": 316,
+      "witnessMs": 80.628176,
+      "proveMs": 303.186646,
+      "verifyMs": 28.769342
+    },
+    {
+      "seed": 317,
+      "witnessMs": 77.411297,
+      "proveMs": 319.557212,
+      "verifyMs": 18.398028
+    },
+    {
+      "seed": 318,
+      "witnessMs": 83.149529,
+      "proveMs": 322.612841,
+      "verifyMs": 38.193489
+    },
+    {
+      "seed": 319,
+      "witnessMs": 84.952233,
+      "proveMs": 330.81585,
+      "verifyMs": 24.76987
+    },
+    {
+      "seed": 320,
+      "witnessMs": 80.968503,
+      "proveMs": 263.997668,
+      "verifyMs": 15.812936
+    },
+    {
+      "seed": 321,
+      "witnessMs": 107.502313,
+      "proveMs": 259.439104,
+      "verifyMs": 27.13479
+    },
+    {
+      "seed": 322,
+      "witnessMs": 91.866834,
+      "proveMs": 323.932548,
+      "verifyMs": 23.352216
+    },
+    {
+      "seed": 323,
+      "witnessMs": 91.63602,
+      "proveMs": 322.000946,
+      "verifyMs": 17.874352
+    },
+    {
+      "seed": 324,
+      "witnessMs": 86.087353,
+      "proveMs": 327.579876,
+      "verifyMs": 28.334234
+    },
+    {
+      "seed": 325,
+      "witnessMs": 109.781971,
+      "proveMs": 311.900536,
+      "verifyMs": 21.241672
+    },
+    {
+      "seed": 326,
+      "witnessMs": 80.70887,
+      "proveMs": 329.112069,
+      "verifyMs": 27.950595
+    },
+    {
+      "seed": 327,
+      "witnessMs": 103.392433,
+      "proveMs": 372.813437,
+      "verifyMs": 26.290893
+    },
+    {
+      "seed": 328,
+      "witnessMs": 107.22963,
+      "proveMs": 374.252092,
+      "verifyMs": 19.393532
+    },
+    {
+      "seed": 329,
+      "witnessMs": 79.600995,
+      "proveMs": 381.785172,
+      "verifyMs": 23.545166
+    },
+    {
+      "seed": 330,
+      "witnessMs": 112.431995,
+      "proveMs": 377.941505,
+      "verifyMs": 25.849658
+    },
+    {
+      "seed": 331,
+      "witnessMs": 84.782971,
+      "proveMs": 366.652114,
+      "verifyMs": 19.431752
+    },
+    {
+      "seed": 332,
+      "witnessMs": 75.305817,
+      "proveMs": 353.632667,
+      "verifyMs": 18.034143
+    },
+    {
+      "seed": 333,
+      "witnessMs": 80.312428,
+      "proveMs": 370.584663,
+      "verifyMs": 19.099068
+    },
+    {
+      "seed": 334,
+      "witnessMs": 89.716202,
+      "proveMs": 295.282661,
+      "verifyMs": 24.53425
+    },
+    {
+      "seed": 335,
+      "witnessMs": 101.81025,
+      "proveMs": 307.459757,
+      "verifyMs": 17.657296
+    },
+    {
+      "seed": 336,
+      "witnessMs": 76.665677,
+      "proveMs": 315.231145,
+      "verifyMs": 24.249107
+    },
+    {
+      "seed": 337,
+      "witnessMs": 79.513643,
+      "proveMs": 264.872744,
+      "verifyMs": 17.718542
+    },
+    {
+      "seed": 338,
+      "witnessMs": 73.631596,
+      "proveMs": 288.204556,
+      "verifyMs": 17.341444
+    },
+    {
+      "seed": 339,
+      "witnessMs": 85.77271,
+      "proveMs": 274.437616,
+      "verifyMs": 19.576777
+    },
+    {
+      "seed": 340,
+      "witnessMs": 70.582127,
+      "proveMs": 311.934308,
+      "verifyMs": 19.552425
+    },
+    {
+      "seed": 341,
+      "witnessMs": 116.669859,
+      "proveMs": 269.461797,
+      "verifyMs": 15.859374
+    },
+    {
+      "seed": 342,
+      "witnessMs": 72.707015,
+      "proveMs": 312.950762,
+      "verifyMs": 17.363017
+    },
+    {
+      "seed": 343,
+      "witnessMs": 79.566445,
+      "proveMs": 289.185576,
+      "verifyMs": 18.265853
+    },
+    {
+      "seed": 344,
+      "witnessMs": 83.03808,
+      "proveMs": 357.536911,
+      "verifyMs": 18.792771
+    },
+    {
+      "seed": 345,
+      "witnessMs": 77.769267,
+      "proveMs": 274.708577,
+      "verifyMs": 22.223657
+    },
+    {
+      "seed": 346,
+      "witnessMs": 76.05476,
+      "proveMs": 318.258588,
+      "verifyMs": 15.898143
+    },
+    {
+      "seed": 347,
+      "witnessMs": 72.338611,
+      "proveMs": 311.999155,
+      "verifyMs": 19.939203
+    },
+    {
+      "seed": 348,
+      "witnessMs": 76.705874,
+      "proveMs": 302.597463,
+      "verifyMs": 18.146493
+    },
+    {
+      "seed": 349,
+      "witnessMs": 72.10776,
+      "proveMs": 292.673441,
+      "verifyMs": 18.227243
+    },
+    {
+      "seed": 350,
+      "witnessMs": 72.046779,
+      "proveMs": 243.891672,
+      "verifyMs": 58.03529
+    },
+    {
+      "seed": 351,
+      "witnessMs": 104.479771,
+      "proveMs": 272.273552,
+      "verifyMs": 20.018266
+    },
+    {
+      "seed": 352,
+      "witnessMs": 98.576673,
+      "proveMs": 283.95003,
+      "verifyMs": 18.082548
+    },
+    {
+      "seed": 353,
+      "witnessMs": 69.048656,
+      "proveMs": 254.70617,
+      "verifyMs": 54.041981
+    },
+    {
+      "seed": 354,
+      "witnessMs": 105.90465,
+      "proveMs": 315.629594,
+      "verifyMs": 20.112378
+    },
+    {
+      "seed": 355,
+      "witnessMs": 83.905416,
+      "proveMs": 267.705579,
+      "verifyMs": 17.926736
+    },
+    {
+      "seed": 356,
+      "witnessMs": 85.506852,
+      "proveMs": 328.880591,
+      "verifyMs": 21.834448
+    },
+    {
+      "seed": 357,
+      "witnessMs": 109.25878,
+      "proveMs": 383.659104,
+      "verifyMs": 17.430641
+    },
+    {
+      "seed": 358,
+      "witnessMs": 79.67773,
+      "proveMs": 380.07339,
+      "verifyMs": 22.843421
+    },
+    {
+      "seed": 359,
+      "witnessMs": 76.133137,
+      "proveMs": 310.838457,
+      "verifyMs": 18.062372
+    },
+    {
+      "seed": 360,
+      "witnessMs": 111.384464,
+      "proveMs": 317.514367,
+      "verifyMs": 58.044298
+    },
+    {
+      "seed": 361,
+      "witnessMs": 79.068083,
+      "proveMs": 332.11002,
+      "verifyMs": 26.838485
+    },
+    {
+      "seed": 362,
+      "witnessMs": 98.322825,
+      "proveMs": 326.971822,
+      "verifyMs": 18.734681
+    },
+    {
+      "seed": 363,
+      "witnessMs": 84.684951,
+      "proveMs": 395.731127,
+      "verifyMs": 23.563133
+    },
+    {
+      "seed": 364,
+      "witnessMs": 94.46421,
+      "proveMs": 342.228712,
+      "verifyMs": 24.914748
+    },
+    {
+      "seed": 365,
+      "witnessMs": 87.467761,
+      "proveMs": 295.932383,
+      "verifyMs": 18.465175
+    },
+    {
+      "seed": 366,
+      "witnessMs": 79.038651,
+      "proveMs": 355.138685,
+      "verifyMs": 20.972044
+    },
+    {
+      "seed": 367,
+      "witnessMs": 114.300338,
+      "proveMs": 268.669703,
+      "verifyMs": 23.696602
+    },
+    {
+      "seed": 368,
+      "witnessMs": 106.373493,
+      "proveMs": 294.815805,
+      "verifyMs": 19.021077
+    },
+    {
+      "seed": 369,
+      "witnessMs": 103.732316,
+      "proveMs": 319.231063,
+      "verifyMs": 18.021689
+    },
+    {
+      "seed": 370,
+      "witnessMs": 92.139116,
+      "proveMs": 388.733493,
+      "verifyMs": 20.616318
+    },
+    {
+      "seed": 371,
+      "witnessMs": 78.54144,
+      "proveMs": 348.061556,
+      "verifyMs": 16.720403
+    },
+    {
+      "seed": 372,
+      "witnessMs": 78.886001,
+      "proveMs": 358.635696,
+      "verifyMs": 21.047006
+    },
+    {
+      "seed": 373,
+      "witnessMs": 89.401111,
+      "proveMs": 334.541968,
+      "verifyMs": 25.41783
+    },
+    {
+      "seed": 374,
+      "witnessMs": 111.735783,
+      "proveMs": 392.990068,
+      "verifyMs": 18.546823
+    },
+    {
+      "seed": 375,
+      "witnessMs": 78.9985,
+      "proveMs": 278.63608,
+      "verifyMs": 58.858984
+    },
+    {
+      "seed": 376,
+      "witnessMs": 95.951699,
+      "proveMs": 305.45042,
+      "verifyMs": 21.299266
+    },
+    {
+      "seed": 377,
+      "witnessMs": 82.264812,
+      "proveMs": 328.94009,
+      "verifyMs": 24.105669
+    },
+    {
+      "seed": 378,
+      "witnessMs": 102.697344,
+      "proveMs": 427.583222,
+      "verifyMs": 19.813718
+    },
+    {
+      "seed": 379,
+      "witnessMs": 82.610611,
+      "proveMs": 304.510561,
+      "verifyMs": 23.774095
+    },
+    {
+      "seed": 380,
+      "witnessMs": 74.558112,
+      "proveMs": 314.285626,
+      "verifyMs": 23.126769
+    },
+    {
+      "seed": 381,
+      "witnessMs": 94.326379,
+      "proveMs": 327.309344,
+      "verifyMs": 43.121265
+    },
+    {
+      "seed": 382,
+      "witnessMs": 80.787568,
+      "proveMs": 251.121922,
+      "verifyMs": 29.076232
+    },
+    {
+      "seed": 383,
+      "witnessMs": 73.079178,
+      "proveMs": 297.841121,
+      "verifyMs": 35.236254
+    },
+    {
+      "seed": 384,
+      "witnessMs": 76.249454,
+      "proveMs": 377.186313,
+      "verifyMs": 22.421597
+    },
+    {
+      "seed": 385,
+      "witnessMs": 113.055515,
+      "proveMs": 379.636716,
+      "verifyMs": 56.421753
+    },
+    {
+      "seed": 386,
+      "witnessMs": 108.189424,
+      "proveMs": 294.19077,
+      "verifyMs": 77.327456
+    },
+    {
+      "seed": 387,
+      "witnessMs": 78.296492,
+      "proveMs": 357.338897,
+      "verifyMs": 26.281983
+    },
+    {
+      "seed": 388,
+      "witnessMs": 88.497635,
+      "proveMs": 339.887059,
+      "verifyMs": 24.352794
+    },
+    {
+      "seed": 389,
+      "witnessMs": 89.8864,
+      "proveMs": 315.278176,
+      "verifyMs": 16.801999
+    },
+    {
+      "seed": 390,
+      "witnessMs": 103.310337,
+      "proveMs": 349.601271,
+      "verifyMs": 28.638472
+    },
+    {
+      "seed": 391,
+      "witnessMs": 108.811833,
+      "proveMs": 363.159668,
+      "verifyMs": 18.531426
+    },
+    {
+      "seed": 392,
+      "witnessMs": 106.725438,
+      "proveMs": 356.647668,
+      "verifyMs": 29.847252
+    },
+    {
+      "seed": 393,
+      "witnessMs": 81.306679,
+      "proveMs": 400.251745,
+      "verifyMs": 25.025669
+    },
+    {
+      "seed": 394,
+      "witnessMs": 96.284542,
+      "proveMs": 451.266399,
+      "verifyMs": 23.917095
+    },
+    {
+      "seed": 395,
+      "witnessMs": 108.131918,
+      "proveMs": 299.13821,
+      "verifyMs": 22.303813
+    },
+    {
+      "seed": 396,
+      "witnessMs": 89.712347,
+      "proveMs": 319.475927,
+      "verifyMs": 23.051416
+    },
+    {
+      "seed": 397,
+      "witnessMs": 77.904181,
+      "proveMs": 308.476625,
+      "verifyMs": 16.7804
+    },
+    {
+      "seed": 398,
+      "witnessMs": 100.492955,
+      "proveMs": 332.511563,
+      "verifyMs": 19.46356
+    },
+    {
+      "seed": 399,
+      "witnessMs": 90.933046,
+      "proveMs": 369.114052,
+      "verifyMs": 18.686228
+    },
+    {
+      "seed": 400,
+      "witnessMs": 87.623746,
+      "proveMs": 316.566501,
+      "verifyMs": 73.828673
+    },
+    {
+      "seed": 401,
+      "witnessMs": 75.863246,
+      "proveMs": 266.536704,
+      "verifyMs": 17.049565
+    },
+    {
+      "seed": 402,
+      "witnessMs": 83.457362,
+      "proveMs": 278.515587,
+      "verifyMs": 20.410693
+    },
+    {
+      "seed": 403,
+      "witnessMs": 89.925774,
+      "proveMs": 357.160343,
+      "verifyMs": 20.361998
+    },
+    {
+      "seed": 404,
+      "witnessMs": 123.960936,
+      "proveMs": 397.460524,
+      "verifyMs": 18.859379
+    },
+    {
+      "seed": 405,
+      "witnessMs": 79.892724,
+      "proveMs": 381.660264,
+      "verifyMs": 27.669156
+    },
+    {
+      "seed": 406,
+      "witnessMs": 97.107072,
+      "proveMs": 298.412189,
+      "verifyMs": 18.925793
+    },
+    {
+      "seed": 407,
+      "witnessMs": 73.239795,
+      "proveMs": 301.841311,
+      "verifyMs": 18.981141
+    },
+    {
+      "seed": 408,
+      "witnessMs": 93.431551,
+      "proveMs": 317.923967,
+      "verifyMs": 20.56058
+    },
+    {
+      "seed": 409,
+      "witnessMs": 83.218162,
+      "proveMs": 258.554017,
+      "verifyMs": 16.972513
+    },
+    {
+      "seed": 410,
+      "witnessMs": 94.336512,
+      "proveMs": 340.257186,
+      "verifyMs": 30.871016
+    },
+    {
+      "seed": 411,
+      "witnessMs": 100.738413,
+      "proveMs": 315.065383,
+      "verifyMs": 25.409461
+    },
+    {
+      "seed": 412,
+      "witnessMs": 88.245874,
+      "proveMs": 294.863402,
+      "verifyMs": 61.591803
+    },
+    {
+      "seed": 413,
+      "witnessMs": 89.284682,
+      "proveMs": 271.801032,
+      "verifyMs": 24.209075
+    },
+    {
+      "seed": 414,
+      "witnessMs": 126.561403,
+      "proveMs": 297.100753,
+      "verifyMs": 17.637639
+    },
+    {
+      "seed": 415,
+      "witnessMs": 76.712835,
+      "proveMs": 341.874419,
+      "verifyMs": 23.46146
+    },
+    {
+      "seed": 416,
+      "witnessMs": 100.019758,
+      "proveMs": 385.589901,
+      "verifyMs": 27.127289
+    },
+    {
+      "seed": 417,
+      "witnessMs": 91.772666,
+      "proveMs": 335.179113,
+      "verifyMs": 21.279186
+    },
+    {
+      "seed": 418,
+      "witnessMs": 131.749797,
+      "proveMs": 315.926424,
+      "verifyMs": 17.903229
+    },
+    {
+      "seed": 419,
+      "witnessMs": 102.424672,
+      "proveMs": 352.429765,
+      "verifyMs": 27.289629
+    },
+    {
+      "seed": 420,
+      "witnessMs": 80.275403,
+      "proveMs": 347.850062,
+      "verifyMs": 23.275881
+    },
+    {
+      "seed": 421,
+      "witnessMs": 97.724114,
+      "proveMs": 342.101404,
+      "verifyMs": 18.466369
+    },
+    {
+      "seed": 422,
+      "witnessMs": 85.575728,
+      "proveMs": 321.157138,
+      "verifyMs": 19.192522
+    },
+    {
+      "seed": 423,
+      "witnessMs": 83.193652,
+      "proveMs": 402.583834,
+      "verifyMs": 21.112316
+    },
+    {
+      "seed": 424,
+      "witnessMs": 115.957765,
+      "proveMs": 431.124553,
+      "verifyMs": 24.554079
+    },
+    {
+      "seed": 425,
+      "witnessMs": 119.337641,
+      "proveMs": 333.670312,
+      "verifyMs": 22.382257
+    },
+    {
+      "seed": 426,
+      "witnessMs": 87.388003,
+      "proveMs": 314.054194,
+      "verifyMs": 15.798752
+    },
+    {
+      "seed": 427,
+      "witnessMs": 72.758046,
+      "proveMs": 312.711718,
+      "verifyMs": 17.490718
+    },
+    {
+      "seed": 428,
+      "witnessMs": 82.589834,
+      "proveMs": 326.245018,
+      "verifyMs": 27.010775
+    },
+    {
+      "seed": 429,
+      "witnessMs": 84.150105,
+      "proveMs": 325.223424,
+      "verifyMs": 20.081742
+    },
+    {
+      "seed": 430,
+      "witnessMs": 82.732011,
+      "proveMs": 328.696819,
+      "verifyMs": 17.493911
+    },
+    {
+      "seed": 431,
+      "witnessMs": 109.887337,
+      "proveMs": 342.483023,
+      "verifyMs": 21.354548
+    },
+    {
+      "seed": 432,
+      "witnessMs": 105.519661,
+      "proveMs": 482.8088,
+      "verifyMs": 33.588787
+    },
+    {
+      "seed": 433,
+      "witnessMs": 125.111873,
+      "proveMs": 301.115589,
+      "verifyMs": 17.997838
+    },
+    {
+      "seed": 434,
+      "witnessMs": 85.366743,
+      "proveMs": 307.749987,
+      "verifyMs": 18.43235
+    },
+    {
+      "seed": 435,
+      "witnessMs": 77.165208,
+      "proveMs": 404.092905,
+      "verifyMs": 26.612359
+    },
+    {
+      "seed": 436,
+      "witnessMs": 105.753713,
+      "proveMs": 309.216796,
+      "verifyMs": 21.456404
+    },
+    {
+      "seed": 437,
+      "witnessMs": 69.356227,
+      "proveMs": 244.86601,
+      "verifyMs": 15.905288
+    },
+    {
+      "seed": 438,
+      "witnessMs": 71.047102,
+      "proveMs": 252.357172,
+      "verifyMs": 57.309698
+    },
+    {
+      "seed": 439,
+      "witnessMs": 82.522455,
+      "proveMs": 329.045965,
+      "verifyMs": 18.257753
+    },
+    {
+      "seed": 440,
+      "witnessMs": 78.391747,
+      "proveMs": 251.936536,
+      "verifyMs": 17.703139
+    },
+    {
+      "seed": 441,
+      "witnessMs": 73.395306,
+      "proveMs": 300.114313,
+      "verifyMs": 16.59588
+    },
+    {
+      "seed": 442,
+      "witnessMs": 84.084083,
+      "proveMs": 278.824454,
+      "verifyMs": 18.596146
+    },
+    {
+      "seed": 443,
+      "witnessMs": 72.040877,
+      "proveMs": 258.200558,
+      "verifyMs": 16.917914
+    },
+    {
+      "seed": 444,
+      "witnessMs": 112.67795,
+      "proveMs": 274.677558,
+      "verifyMs": 17.272809
+    },
+    {
+      "seed": 445,
+      "witnessMs": 81.322241,
+      "proveMs": 354.28192,
+      "verifyMs": 51.232279
+    },
+    {
+      "seed": 446,
+      "witnessMs": 74.744238,
+      "proveMs": 376.452543,
+      "verifyMs": 23.963645
+    },
+    {
+      "seed": 447,
+      "witnessMs": 99.225487,
+      "proveMs": 342.675912,
+      "verifyMs": 18.574835
+    },
+    {
+      "seed": 448,
+      "witnessMs": 97.770874,
+      "proveMs": 323.930862,
+      "verifyMs": 31.911512
+    },
+    {
+      "seed": 449,
+      "witnessMs": 102.545636,
+      "proveMs": 391.768491,
+      "verifyMs": 23.437228
+    },
+    {
+      "seed": 450,
+      "witnessMs": 91.484853,
+      "proveMs": 286.700971,
+      "verifyMs": 20.740322
+    },
+    {
+      "seed": 451,
+      "witnessMs": 110.802361,
+      "proveMs": 352.514222,
+      "verifyMs": 21.817826
+    },
+    {
+      "seed": 452,
+      "witnessMs": 89.068602,
+      "proveMs": 290.529839,
+      "verifyMs": 22.825194
+    },
+    {
+      "seed": 453,
+      "witnessMs": 75.875499,
+      "proveMs": 351.547845,
+      "verifyMs": 22.557722
+    },
+    {
+      "seed": 454,
+      "witnessMs": 85.966291,
+      "proveMs": 296.772298,
+      "verifyMs": 17.965232
+    },
+    {
+      "seed": 455,
+      "witnessMs": 73.763462,
+      "proveMs": 285.025877,
+      "verifyMs": 16.77542
+    },
+    {
+      "seed": 456,
+      "witnessMs": 72.323446,
+      "proveMs": 300.430769,
+      "verifyMs": 16.46822
+    },
+    {
+      "seed": 457,
+      "witnessMs": 79.587891,
+      "proveMs": 322.686566,
+      "verifyMs": 15.802798
+    },
+    {
+      "seed": 458,
+      "witnessMs": 73.141918,
+      "proveMs": 322.410504,
+      "verifyMs": 17.707374
+    },
+    {
+      "seed": 459,
+      "witnessMs": 79.190874,
+      "proveMs": 255.299954,
+      "verifyMs": 25.069182
+    },
+    {
+      "seed": 460,
+      "witnessMs": 66.668923,
+      "proveMs": 309.346212,
+      "verifyMs": 15.97883
+    },
+    {
+      "seed": 461,
+      "witnessMs": 79.909113,
+      "proveMs": 305.000389,
+      "verifyMs": 18.916289
+    },
+    {
+      "seed": 462,
+      "witnessMs": 87.400443,
+      "proveMs": 277.171217,
+      "verifyMs": 18.910964
+    },
+    {
+      "seed": 463,
+      "witnessMs": 88.605018,
+      "proveMs": 341.501032,
+      "verifyMs": 24.984379
+    },
+    {
+      "seed": 464,
+      "witnessMs": 76.517863,
+      "proveMs": 365.851882,
+      "verifyMs": 23.19526
+    },
+    {
+      "seed": 465,
+      "witnessMs": 74.190748,
+      "proveMs": 336.290361,
+      "verifyMs": 20.542882
+    },
+    {
+      "seed": 466,
+      "witnessMs": 101.463087,
+      "proveMs": 309.135787,
+      "verifyMs": 22.897375
+    },
+    {
+      "seed": 467,
+      "witnessMs": 83.104961,
+      "proveMs": 256.596853,
+      "verifyMs": 17.932262
+    },
+    {
+      "seed": 468,
+      "witnessMs": 45.007465,
+      "proveMs": 291.669672,
+      "verifyMs": 24.808587
+    },
+    {
+      "seed": 469,
+      "witnessMs": 82.37599,
+      "proveMs": 274.981117,
+      "verifyMs": 20.723853
+    },
+    {
+      "seed": 470,
+      "witnessMs": 77.309768,
+      "proveMs": 248.36714,
+      "verifyMs": 21.068686
+    },
+    {
+      "seed": 471,
+      "witnessMs": 74.602972,
+      "proveMs": 249.763838,
+      "verifyMs": 23.673623
+    },
+    {
+      "seed": 472,
+      "witnessMs": 60.188514,
+      "proveMs": 316.915102,
+      "verifyMs": 17.357933
+    },
+    {
+      "seed": 473,
+      "witnessMs": 78.715128,
+      "proveMs": 312.357208,
+      "verifyMs": 19.199194
+    },
+    {
+      "seed": 474,
+      "witnessMs": 90.086087,
+      "proveMs": 414.70446,
+      "verifyMs": 48.755241
+    },
+    {
+      "seed": 475,
+      "witnessMs": 116.137704,
+      "proveMs": 248.341178,
+      "verifyMs": 17.88968
+    },
+    {
+      "seed": 476,
+      "witnessMs": 68.035296,
+      "proveMs": 295.654843,
+      "verifyMs": 17.247131
+    },
+    {
+      "seed": 477,
+      "witnessMs": 70.837235,
+      "proveMs": 247.317394,
+      "verifyMs": 31.710694
+    },
+    {
+      "seed": 478,
+      "witnessMs": 73.948412,
+      "proveMs": 282.998792,
+      "verifyMs": 26.991776
+    },
+    {
+      "seed": 479,
+      "witnessMs": 80.232687,
+      "proveMs": 317.989055,
+      "verifyMs": 26.594046
+    },
+    {
+      "seed": 480,
+      "witnessMs": 97.251592,
+      "proveMs": 326.997805,
+      "verifyMs": 19.063093
+    },
+    {
+      "seed": 481,
+      "witnessMs": 75.966114,
+      "proveMs": 257.521747,
+      "verifyMs": 21.807122
+    },
+    {
+      "seed": 482,
+      "witnessMs": 70.488621,
+      "proveMs": 279.385641,
+      "verifyMs": 19.715591
+    },
+    {
+      "seed": 483,
+      "witnessMs": 81.43961,
+      "proveMs": 262.09943,
+      "verifyMs": 18.513314
+    },
+    {
+      "seed": 484,
+      "witnessMs": 102.837783,
+      "proveMs": 299.114357,
+      "verifyMs": 17.633278
+    },
+    {
+      "seed": 485,
+      "witnessMs": 75.301924,
+      "proveMs": 262.741387,
+      "verifyMs": 20.098863
+    },
+    {
+      "seed": 486,
+      "witnessMs": 71.292371,
+      "proveMs": 311.594323,
+      "verifyMs": 19.235672
+    },
+    {
+      "seed": 487,
+      "witnessMs": 82.000613,
+      "proveMs": 255.799341,
+      "verifyMs": 15.875451
+    },
+    {
+      "seed": 488,
+      "witnessMs": 78.472885,
+      "proveMs": 310.344642,
+      "verifyMs": 17.397165
+    },
+    {
+      "seed": 489,
+      "witnessMs": 73.084275,
+      "proveMs": 261.089535,
+      "verifyMs": 16.704334
+    },
+    {
+      "seed": 490,
+      "witnessMs": 111.997408,
+      "proveMs": 285.231541,
+      "verifyMs": 20.505312
+    },
+    {
+      "seed": 491,
+      "witnessMs": 74.641759,
+      "proveMs": 309.166478,
+      "verifyMs": 18.553253
+    },
+    {
+      "seed": 492,
+      "witnessMs": 72.306629,
+      "proveMs": 332.186104,
+      "verifyMs": 26.056789
+    },
+    {
+      "seed": 493,
+      "witnessMs": 106.785764,
+      "proveMs": 295.665838,
+      "verifyMs": 19.478417
+    },
+    {
+      "seed": 494,
+      "witnessMs": 102.853526,
+      "proveMs": 338.876856,
+      "verifyMs": 17.793287
+    },
+    {
+      "seed": 495,
+      "witnessMs": 81.072216,
+      "proveMs": 335.625701,
+      "verifyMs": 19.05385
+    },
+    {
+      "seed": 496,
+      "witnessMs": 101.074053,
+      "proveMs": 295.960527,
+      "verifyMs": 18.346847
+    },
+    {
+      "seed": 497,
+      "witnessMs": 98.794835,
+      "proveMs": 305.29736,
+      "verifyMs": 17.825759
+    },
+    {
+      "seed": 498,
+      "witnessMs": 88.645078,
+      "proveMs": 259.471624,
+      "verifyMs": 17.744028
+    },
+    {
+      "seed": 499,
+      "witnessMs": 80.495849,
+      "proveMs": 275.493461,
+      "verifyMs": 73.68631
+    },
+    {
+      "seed": 500,
+      "witnessMs": 110.5158,
+      "proveMs": 319.523573,
+      "verifyMs": 22.168396
+    }
+  ]
+}

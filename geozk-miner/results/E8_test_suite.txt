@@ -1,0 +1,48 @@
+
+
+  StakeholderRegistry
+    ✔ registers the five supply-chain roles (2715ms)
+    ✔ rejects stakeholder registration by a non-admin account (141ms)
+    ✔ deactivated stakeholders lose access to role-gated functions (159ms)
+
+  Region governance and batch creation
+    ✔ only an auditor can approve a region (85ms)
+    ✔ a mine creates a batch in an approved region (94ms)
+    ✔ rejects batch creation by a non-mine role (113ms)
+    ✔ rejects batch creation against an unapproved region (90ms)
+    ✔ rejects reuse of a geographic commitment (99ms)
+
+  Region-based Groth16 verification (real verifier)
+    ✔ accepts a valid proof and marks the batch ZKP_VERIFIED (860ms)
+    ✔ rejects a tampered proof (521ms)
+    ✔ rejects replay of a valid proof against another batch (552ms)
+    ✔ rejects a proof whose public region does not match the batch region (419ms)
+    ✔ rejects proof submission by a non-auditor (479ms)
+    ✔ rejects a second verification of the same batch (546ms)
+    ✔ rejects verification after the batch region is revoked (422ms)
+ERROR:  4 Error in template RegionProof_148 line: 56
+
+    ✔ cannot produce a witness for coordinates outside the approved region (195ms)
+ERROR:  4 Error in template Num2Bits_0 line: 38
+Error in template RegionProof_148 line: 33
+
+    ✔ range checks block field-wraparound coordinates (152ms)
+
+  Lifecycle and custody enforcement
+    ✔ blocks downstream progression before ZKP verification (126ms)
+    ✔ blocks skipped lifecycle stages (448ms)
+    ✔ blocks a transition by the wrong role (570ms)
+    ✔ blocks direct writes of governance states through updateBatchStatus (447ms)
+    ✔ records custody hand-offs through the complete lifecycle (578ms)
+
+  Reacquisition governance (Eq. 15 decision rule)
+    ✔ approves reacquisition when origin is valid and compliance has failed (540ms)
+    ✔ flags for audit when origin and compliance are both valid (523ms)
+    ✔ rejects when the origin region has since been revoked (646ms)
+    ✔ rejects reacquisition requests from unauthorised roles (535ms)
+    ✔ rejects reacquisition of a batch that has not reached a downstream actor (494ms)
+    ✔ rejects resolution by a non-auditor and double resolution (554ms)
+
+
+  28 passing (13s)
+

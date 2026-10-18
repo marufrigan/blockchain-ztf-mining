@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.local
+.DS_Store
+artifacts/
+cache/
+coverage/
+typechain-types/
+figures/out/
+figures/logs/
+*.log
+__pycache__/
+# keep the compiled circuit and final ptau needed to reproduce the proofs
+circuits/build/regionProof/*.zkey
+circuits/build/regionProof/ptau/*
+!circuits/build/regionProof/ptau/pot12_final.ptau

@@ -1,0 +1,78 @@
+{
+  "environment": {
+    "startedAt": "2026-10-18T14:45:57.187Z",
+    "network": "localhost",
+    "chainId": 31337,
+    "hardfork": "osaka",
+    "blockGasLimit": "60000000",
+    "node": "v22.22.0",
+    "os": "Linux 6.18.44-fc-v139",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "cpuCount": 2,
+    "memoryGB": 7.8,
+    "versions": {
+      "hardhat": "2.28.6",
+      "ethers": "6.16.0",
+      "openzeppelin": "5.6.1",
+      "snarkjs": "0.7.6",
+      "circomlib": "2.0.5",
+      "circomlibjs": "0.1.7",
+      "circom": "circom2 npm package 0.2.22\ncircom compiler 2.2.2",
+      "solc": "0.8.23",
+      "optimizerRuns": 200
+    }
+  },
+  "r1csInfo": "[INFO]  snarkJS: Curve: bn-128\n[INFO]  snarkJS: # of Wires: 1681\n[INFO]  snarkJS: # of Constraints: 1687\n[INFO]  snarkJS: # of Private Inputs: 3\n[INFO]  snarkJS: # of Public Inputs: 6\n[INFO]  snarkJS: # of Labels: 2469\n[INFO]  snarkJS: # of Outputs: 0\n",
+  "artifacts": [
+    {
+      "artifact": "Witness generator (regionProof.wasm)",
+      "bytes": 2426293,
+      "use": "Off-chain (prover)"
+    },
+    {
+      "artifact": "Proving key (regionProof_final.zkey)",
+      "bytes": 763426,
+      "use": "Off-chain (prover)"
+    },
+    {
+      "artifact": "Constraint system (regionProof.r1cs)",
+      "bytes": 243216,
+      "use": "Setup / audit"
+    },
+    {
+      "artifact": "Verification key (verification_key.json)",
+      "bytes": 3842,
+      "use": "Verifier generation"
+    },
+    {
+      "artifact": "Solidity verifier source (RegionProofVerifier.sol)",
+      "bytes": 9008,
+      "use": "Deployment"
+    },
+    {
+      "artifact": "Verifier runtime bytecode",
+      "bytes": 1839,
+      "use": "On-chain"
+    },
+    {
+      "artifact": "Groth16 proof (JSON)",
+      "bytes": 725,
+      "use": "Submitted per batch"
+    },
+    {
+      "artifact": "Public signals (JSON)",
+      "bytes": 205,
+      "use": "Submitted per batch"
+    },
+    {
+      "artifact": "Proof calldata (ABI-encoded, 8 x 32 B)",
+      "bytes": 256,
+      "use": "Submitted per batch"
+    },
+    {
+      "artifact": "Public signals calldata (6 x 32 B)",
+      "bytes": 192,
+      "use": "Submitted per batch"
+    }
+  ]
+}

@@ -11,3 +11,6 @@ node_modules/
 **/build/
 **/dist/
 *.log
+
+# compiled region circuit needed to reproduce the reported proofs
+!geozk-miner/circuits/build/
